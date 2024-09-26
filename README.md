@@ -1,6 +1,5 @@
-# (JavaFX) SmartGraph
+# (JavaFX) PathGraph
 
-# BoostSmartGraph Project Description
 
 ## Project Origin
 BoostSmartGraph was created out of the necessity for a specialized library to represent, manage, and interact with path graphs, particularly for use in pathfinding algorithms. After an unsuccessful search for an existing solution, it was decided to develop an enhanced version based on the SmartGraph library.
