@@ -14,7 +14,7 @@ The primary need was to improve certain functionalities of SmartGraph that, whil
 - **Enhanced Interaction**: Specific improvements were made to enable greater interactivity with the graphs, providing developers with a smoother and more comprehensive user experience.
 
 ## Conclusion
-BoostSmartGraph addresses the lack of specialized libraries for managing and interacting with path graphs by introducing new features and improving those present in SmartGraph. This fork stands out for its ability to more effectively tackle the challenges related to path graphs, offering advanced support for developing pathfinding algorithms.
+BoostSmartGraph addresses the lack of specialized libraries for managing and interacting with path graphs by introducing new features and adapting those present in SmartGraph. This fork stands out for its ability to more effectively tackle the challenges related to path graphs, offering advanced support for developing pathfinding algorithms.
 
 
 
