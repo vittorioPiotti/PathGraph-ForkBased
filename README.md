@@ -1,7 +1,7 @@
 # (JavaFX) PathGraph
 
 ## Why Path Graph
-If you need a ready-to-use library for the representation of path graphs with nodes, edges, and associated weights, offering advanced features for user interface representation, management, and interaction with path graphs, then PathGraph is the right solution for you.
+If you need a ready-to-use library for the representation of path graphs with nodes, edges, and associated weights, offering advanced features for user interface of representing, managing, and interacting with path graphs, then PathGraph is the right solution for you.
 
 ## Project Origin
 BoostSmartGraph was created out of the necessity for a specialized library to represent, manage, and interact with path graphs, particularly for use in pathfinding algorithms. After an unsuccessful search for an existing solution, it was decided to develop an adapted version based on the SmartGraph library.
