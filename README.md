@@ -28,15 +28,8 @@ BoostSmartGraph addresses the lack of specialized libraries for managing and int
 
 ## Licenses
 
-### JavaFXSmartGraph
-
-Original author: **Bruno Silva** - [(GitHub page)](https://github.com/brunomnsilva) | [(Personal page)](https://www.brunomnsilva.com/)
-
-Orginal version: JavaFXSmartGraph v2.0.0: [JavaFXSmartGraph v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0)
-
-Licensed under the [MIT License](https://github.com/brunomnsilva/JavaFXSmartGraph/blob/master/LICENSE.txt)
+| Component          | Version         | Copyright                                      | License                                                                                            |
+|---------------------|------------------|------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| JavaFXSmartGraph       | v2.0.0: [JavaFXSmartGraph v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0)           | Bruno Silva - [(GitHub page)](https://github.com/brunomnsilva)  [(Personal page)](https://www.brunomnsilva.com/)                          | [GPL-3.0 License](https://github.com/vittorioPiotti/Subnet-Solver-Java/blob/main/LICENSE.md)       |
 
 
----
-
-I hope you find SmartGraph useful and look forward to seeing the projects you create with it!
