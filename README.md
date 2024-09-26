@@ -9,9 +9,9 @@ The primary need was to improve certain functionalities of SmartGraph that, whil
 
 ## Key Objectives
 
-- **Optimization**: The original features of SmartGraph were reviewed and optimized to enhance performance in the context of path graphs.
-- **New Features**: New functionalities were added to simplify the dynamic representation and management of graphs, making BoostSmartGraph a versatile tool for developing path-related algorithms.
-- **Enhanced Interaction**: Specific improvements were made to enable greater interactivity with the graphs, providing developers with a smoother and more comprehensive user experience.
+- **Optimization**: The original features of SmartGraph were reviewed and optimized to suit of path graphs.
+- **New Features**: New features have been added to represent, manage and interact with path graphs ensuring dynamic updating of components from user events making BoostSmartGraph a versatile tool for developing path-related algorithms
+- **Enhanced Interaction**: Interactions with the user are more complex from the optimization of those already present to the implementation of other specifications in order to fully guarantee dynamic management and a structured representation of the path graphs
 
 ## Conclusion
 BoostSmartGraph addresses the lack of specialized libraries for managing and interacting with path graphs by introducing new features and adapting those present in SmartGraph. This fork stands out for its ability to more effectively tackle the challenges related to path graphs, offering advanced support for developing pathfinding algorithms.
