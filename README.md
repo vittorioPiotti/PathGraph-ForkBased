@@ -6,7 +6,8 @@ If you need a ready-to-use library for the representation of path graphs with no
 ## Index
 
  1. [Project Explanation](#project-explanation)
- 2. [Licenses](#Licenses)
+ 2. [Features](#Features)
+ 3. [Licenses](#Licenses)
     
 ## Project Explanation
 
@@ -26,6 +27,8 @@ In the absence of a pre-made library that met these requirements, SmartGraph was
 ### Conclusion
 PathGraph addresses the lack of specialized libraries for managing and interacting with path graphs by introducing new features and adapting those present in SmartGraph. This fork stands out for its ability to more effectively tackle the challenges related to path graphs, offering advanced support for developing pathfinding algorithms.
 
+
+## Features
 
 ## Licenses
 
