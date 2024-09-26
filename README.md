@@ -1,5 +1,23 @@
 # (JavaFX) SmartGraph
 
+# BoostSmartGraph Project Description
+
+## Project Origin
+BoostSmartGraph was born out of the need for an optimized library to represent, manage, and interact with path graphs, particularly for use in pathfinding algorithms. After an unsuccessful search for a ready-made solution, the decision was made to create an adapted version based on the existing SmartGraph library.
+
+## Fork Motivation
+The primary goal was to improve certain SmartGraph functionalities that, while valid, were not fully optimal for managing path graphs in specific applications. In the absence of a suitable pre-packaged library, SmartGraph was chosen as the foundation for creating BoostSmartGraph.
+
+## Key Objectives
+
+- **Optimization**: The original features of SmartGraph were reviewed and optimized to improve performance in the context of path graphs.
+- **New Features**: New functionalities were introduced to facilitate dynamic graph representation and management, making BoostSmartGraph a versatile tool for developing pathfinding algorithms.
+- **Enhanced Interaction**: Specific improvements were made to allow for greater interactivity with graphs, providing a smoother and more complete experience for developers.
+
+## Conclusion
+BoostSmartGraph addresses the lack of specialized libraries for managing and interacting with path graphs, offering new features while enhancing existing ones in SmartGraph. This fork stands out for its ability to more effectively tackle challenges related to path graphs, providing advanced support for pathfinding algorithm development.
+
+
 This project provides a generic (Java FX) **graph visualization library** that can automatically arrange the vertices' locations
 through a [force-directed algorithm](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) in real-time.
 
