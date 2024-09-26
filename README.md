@@ -33,7 +33,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) 
 
 ## Authors
 
+### JavaFXSmartGraph
 Original author: **Bruno Silva** - [(GitHub page)](https://github.com/brunomnsilva) | [(Personal page)](https://www.brunomnsilva.com/)
+Orgiginal version: JavaFXSmartGraph v2.0.0: [JavaFXSmartGraph v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0)
+Licensed under the [MIT License](https://github.com/brunomnsilva/JavaFXSmartGraph/blob/master/LICENSE.txt)
+
 
 ---
 
