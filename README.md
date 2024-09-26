@@ -1,7 +1,11 @@
 # (JavaFX) PathGraph
 
+PathGraph is an adapted version of the SmartGraph library, developed to implement specific features for the representation, management, and interaction with path graphs.
+
+#### Why PathGraph
 If you need a ready-to-use library for representing path graphs with associated nodes, edges and weights, which offers advanced user interface features to represent, manage and interact with path graphs, then PathGraph is the right solution for you .
 
+#### Fork based project
 This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph for the specific use of path graphs
 
 
