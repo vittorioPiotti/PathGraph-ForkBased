@@ -30,6 +30,8 @@ PathGraph addresses the lack of specialized libraries for managing and interacti
 
 ## Features
 
+
+
 ## Licenses
 
 | Component          | Version         | Copyright                                      | License                                                                                            |
