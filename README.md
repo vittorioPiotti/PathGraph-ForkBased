@@ -2,7 +2,7 @@
 
 
 ## Project Origin
-BoostSmartGraph was created out of the necessity for a specialized library to represent, manage, and interact with path graphs, particularly for use in pathfinding algorithms. After an unsuccessful search for an existing solution, it was decided to develop an enhanced version based on the SmartGraph library.
+BoostSmartGraph was created out of the necessity for a specialized library to represent, manage, and interact with path graphs, particularly for use in pathfinding algorithms. After an unsuccessful search for an existing solution, it was decided to develop an adapted version based on the SmartGraph library.
 
 ## Fork Motivation
 The primary need was to improve certain functionalities of SmartGraph that, while useful, were not fully optimal for managing path graphs in specific applications. In the absence of a pre-made library that met these requirements, SmartGraph was chosen as the foundation for the creation of BoostSmartGraph.
