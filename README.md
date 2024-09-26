@@ -6,8 +6,7 @@ If you need a ready-to-use library for the representation of path graphs with no
 ## Index
 
  1. [Project Explanation](#project-explanation)
- 2. [Project Explanation](#project-explanation)
- 3. [Licenses](#Licenses)
+ 2. [Licenses](#Licenses)
     
 ## Project Explanation
 
