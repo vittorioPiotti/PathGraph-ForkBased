@@ -15,12 +15,18 @@ SmartGraphUI is an adapted version of the SmartGraph library, developed to imple
 <details open>
 <summary>
 
-#### Why SmartGraphUI
 
+
+
+<details><summary>
+
+ #### Why SmartGraphUI
+ 
 </summary>
-If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated weights, which offers a user-friendly interface to represent, manage, and interact with path graphs, then SmartGraphUI is the right solution for you.
-</details>
 
+If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated weights, which offers a user-friendly interface to represent, manage, and interact with path graphs, then SmartGraphUI is the right solution for you.
+
+</details>
 
 #### Fork based project
 This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. SmartGraphUI is therefore the adaptation of SmartGraph to improve the user-experience in a user-firendly interface.
