@@ -17,7 +17,10 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 
 **Download Graphs** is possibile to download **json file** in wich there are the data of nodes, edges and associated weights  of the rappresented graph
 
+**Zoom And Drag**
 
+
+<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoomAndDrag.gif" alt="Icona" width="100%"/>
 
 The user make **Douple Click** on one of this components of the graph to do:
 | Background| Node | Edge |
