@@ -57,7 +57,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 |  |  | Split Edge |
 |  |  | Edit Edge |
 
-> Gifs made by PathGraph running software testing videos
+> The gifs are taken from the PathGraph software
 
 #### Annotations about Interactions with Graph
 * _A maximum of two edges with different directions can be created between two nodes_
@@ -72,7 +72,7 @@ The user interactions with graph container can be:
 | ------------ | ------------ | ------------ |
 |<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoom.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/drag.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="100%"/>|
 
-> Gifs made by PathGraph running software testing videos
+> The gifs are taken from the PathGraph software
 
 #### Annotations about Interactions with Graph Container
 
