@@ -34,6 +34,28 @@ This is allowed thanks to greater transparency of the changes made in the recons
  2. [Intuitive UI System](#Intuitive-UI-System)
  3. [Display Found Path](#Display-Found-Path)
  4. [Upload and Download Graphs](#Upload-and-Download-Graphs)
+ 5. [Resume](#Resume)
+
+    
+### Smart Callbacks System
+
+Each event is associated with a callback that is defined during the constructor instantiation.  
+This ensures that developers can apply their custom actions to each event.
+
+### Intuitive UI System
+
+An effective and minimal user interface has been designed based on the Less-is-More principle.  
+It is possible to choose whether to use the default UI or configure custom actions for the associated events.
+
+
+### Display Found Path
+
+Ability to display the found path with an animation to highlight the edge nodes associated with it
+
+### Upload and Download Graphs
+
+Ability to upload **json file** of the graph or to download **json file** of the graph
+
 
 
 ### Resume
@@ -53,30 +75,6 @@ This is allowed thanks to greater transparency of the changes made in the recons
 
 **External features**
  1. upload and download of graphs
-
-    
-
-### Smart Callbacks System
-
-Each event is associated with a callback that is defined during the constructor instantiation.  
-This ensures that developers can apply their custom actions to each event.
-
-### Intuitive UI System
-
-An effective and minimal user interface has been designed based on the Less-is-More principle.  
-It is possible to choose whether to use the default UI or configure custom actions for the associated events.
-
-
-
-
-### Display Found Path
-
-Ability to display the found path with an animation to highlight the edge nodes associated with it
-
-### Upload and Download of Graphs
-
-Ability to upload **json file** of the graph or to download **json file** of the graph
-
 
 
 
