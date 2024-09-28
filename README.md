@@ -26,9 +26,6 @@ This is allowed thanks to greater transparency of the changes made in the recons
 
 ## Features
 
-### Fork Features
-
-The features of the fork can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features) 
 
 ### Display Found Path
 
@@ -42,6 +39,8 @@ Ability to upload **json file** in wich there are the data to rappresent the gra
 ### Download Graph
 
 Ability to download **json file** in wich there are the data of the rappresented graph
+
+> The features of the fork can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features) 
 
 
 ## Usage
