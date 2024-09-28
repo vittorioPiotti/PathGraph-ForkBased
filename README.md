@@ -26,8 +26,33 @@ This is allowed thanks to greater transparency of the changes made in the recons
 
 ## Features
 
-> [!NOTE]
-> The features of the forkd repository can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features) 
+> [!NOTE]  
+> The features of the forked repository can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features)
+
+### Managing Optimization
+
+To create a user-friendly and ready-to-use interface, the user experience has been improved by defining the code structure more restrictively and redefining event logic:  
+ 1. Responsive container  
+ 2. Smooth and stable zoom and drag  
+ 3. Node creation  
+ 4. Node deletion  
+ 5. Edge creation  
+ 6. Edge deletion  
+ 7. Edge renaming  
+ 8. Edge reversal  
+ 9. Edge duplication  
+
+### Smart Callbacks System
+
+Each event is associated with a callback that is defined during the constructor instantiation.  
+This ensures that developers can apply their custom actions to each event.
+
+### Intuitive UI System
+
+An effective and minimal user interface has been designed based on the Less-is-More principle.  
+It is possible to choose whether to use the default UI or configure custom actions for the associated events.
+
+
 
 
 ### Display Found Path
@@ -42,6 +67,7 @@ Ability to upload **json file** in wich there are the data to rappresent the gra
 ### Download Graph
 
 Ability to download **json file** in wich there are the data of the rappresented graph
+
 
 
 
