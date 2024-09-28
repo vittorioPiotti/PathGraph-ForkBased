@@ -62,12 +62,12 @@ The user make **Douple Click** on one of this components of the graph to do:
 > The gifs are taken from the SmartGraphUI software
 
 #### Annotations about Interactions with Graph
-* _Max two edges with different directions connected with two nodes_
-* _The loop is never used in in SmartGraphUI but there in SmartGraph_
-* _Three directions are supported:
-    * the direction of edge creation,
-    * the opposite direction of edge creation,
-    * and bidirectional (the edge without arrows)_
+* Max two edges with different directions connected with two nodes
+* The loop is never used in in SmartGraphUI but there in SmartGraph
+* Three directions are supported:
+    1. the direction of edge creation,
+    2. the opposite direction of edge creation,
+    3. and bidirectional (the edge without arrows)_
       
 
 ### Interactions with Graph Container
