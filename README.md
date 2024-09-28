@@ -40,7 +40,7 @@ Ability to upload **json file** in wich there are the data to rappresent the gra
 
 Ability to download **json file** in wich there are the data of the rappresented graph
 
-> The features of the fork can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features) 
+> The features of the forkd repository can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features) 
 
 
 ## Usage
