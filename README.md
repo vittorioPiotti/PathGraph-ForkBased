@@ -29,6 +29,14 @@ This is allowed thanks to greater transparency of the changes made in the recons
 > [!NOTE]  
 > The features of the forked repository can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features)
 
+### Index
+ 1. [Smart Callbacks System](#Smart-Callbacks-System)
+ 2. [Intuitive UI System](#Intuitive-UI-System)
+ 3. [Display Found Path](#Display-Found-Path)
+ 4. [Upload and Download Graphs](#Upload-and-Download-Graphs)
+
+
+### Resume
 **Container features**
  1. completely responsive container
  2. Smooth and stable and drag
@@ -44,8 +52,7 @@ This is allowed thanks to greater transparency of the changes made in the recons
  8. Display the found path
 
 **External features**
- 1. upload graph from json file
- 2. download graph in json file
+ 1. upload and download of graphs
 
     
 
@@ -66,14 +73,11 @@ It is possible to choose whether to use the default UI or configure custom actio
 
 Ability to display the found path with an animation to highlight the edge nodes associated with it
 
-### Upload Graph
+### Upload and Download of Graphs
 
-Ability to upload **json file** in wich there are the data to rappresent the graph
+Ability to upload **json file** of the graph or to download **json file** of the graph
 
 
-### Download Graph
-
-Ability to download **json file** in wich there are the data of the rappresented graph
 
 
 
