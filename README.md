@@ -25,6 +25,7 @@ Development choices are motivated by the desire to maintain the structure and fu
 This is allowed thanks to greater transparency of the changes made in the reconstruction of the classes so that the differences between the original SmartGraph library code and that present in SmartGraphUI are more understandable
 
 ## Features
+
 > [!NOTE]
 > The features of the forkd repository can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features) 
 
