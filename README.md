@@ -18,7 +18,9 @@ SmartGraphUI is an adapted version of the SmartGraph library, developed to imple
 
 
 
-<details><summary>
+<details>
+ 
+ <summary>
 
  #### Why SmartGraphUI
  
