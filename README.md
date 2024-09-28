@@ -83,8 +83,8 @@ The user interactions with graph container can be:
 
 #### Annotations about Interactions with Graph Container
 
- * There is a control in dragging event to automatic repositioning of the graph is go out of bounds
- * The graph container is responsive and available to fit into any external container
+ * **Dragging control** to automatically reposition the graph when it goes out of bounds
+ * **Responsive container** available to fit into any external container.
 
 ## Requirements
 
