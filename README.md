@@ -8,6 +8,7 @@ If you need a ready-to-use library for representing path graphs with nodes, edge
 #### Fork based project
 This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph for the specific use of path graphs
 
+
 ## UI Usage
 
 
@@ -36,7 +37,11 @@ Other user interaction with graph container events:
 |<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoom.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/drag.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="100%"/>|
 
 
+## Requirements
 
+ * Java Version: `21.0.3`
+ * JavaFX Version: `22.0.2+4`
+ 
 
 ## Licenses
 
