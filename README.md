@@ -28,10 +28,14 @@ The user make **Douple Click** on one of this components of the graph to do:
 |  |  | Split Edge |
 |  |  | Edit Edge |
 
-**Zoom And Drag**
+
+Other user interaction with graph events:
+
+| Zoom| Drag | Zoom and Drag |
+| ------------ | ------------ | ------------ |
+|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="500"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="500"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="500"/>|
 
 
-<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="500"/>
 
 
 ## Licenses
