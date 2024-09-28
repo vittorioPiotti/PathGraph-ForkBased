@@ -44,6 +44,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 |  |  | Split Edge |
 |  |  | Edit Edge |
 
+#### Annotations about Interactions with Graph
 * _A maximum of two edges with different directions can be created between two nodes_
 * _The loop is supported by [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) but is never used in in PathGraph_
 * _Three directions are supported: the direction of edge creation, the opposite direction of edge creation, and bidirectional (the edge without arrows)_
@@ -55,6 +56,8 @@ The user interactions with graph container can be:
 | Zoom| Drag | Zoom and Drag |
 | ------------ | ------------ | ------------ |
 |<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoom.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/drag.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="100%"/>|
+
+#### Annotations about Interactions with Graph Container
 
 _There is a control thanks to which if you drag the graph beyond the limits of the container so as not to lose the graph, automatic repositioning is implemented._
 
