@@ -43,14 +43,6 @@ This is allowed thanks to greater transparency of the changes made in the recons
  7. Edge duplication
  8. Display the found path
 
-* Max two edges with different directions connected with two nodes
-* The loop is never used in in SmartGraphUI but there in SmartGraph
-* Three directions are supported:
-    1. Direction of edge creation,
-    2. Opposite direction of edge creation,
-    3. Bidirectional (edge without arrows)
-
-
 **External features**
  1. upload graph from json file
  2. download graph in json file
