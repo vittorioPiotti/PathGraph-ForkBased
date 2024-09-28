@@ -14,7 +14,7 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 
 
 The user make **Douple Click** on one of this components of the graph to do:
-| Sfondo| Nodo | Arco |
+| Background| Node | Edge |
 | ------------ | ------------ | ------------ |
 | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickBackground.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickNode.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickEdge.gif" alt="Icona" width="100%"/>|
 | New Node | New Edge | Delete Edge |
