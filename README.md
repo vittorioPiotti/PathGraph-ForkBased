@@ -63,7 +63,7 @@ _There is a control thanks to which if you drag the graph beyond the limits of t
 
 ## Requirements
 
- * Java Version: `21.0.3`
+ * Java Version: `21.0.3` [(link)](https://www.oracle.com/java/technologies/downloads/#java21)
  * JavaFX Version: `22.0.2+4`
  
 
