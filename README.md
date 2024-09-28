@@ -1,4 +1,4 @@
-# (JavaFX) PathGraph
+# (JavaFX) BoostSmartGraph
 
 BoostSmartGraph is an adapted version of the SmartGraph library, developed to implement specific features for the representation, management, and interaction with path graphs.
 
