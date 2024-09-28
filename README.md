@@ -11,6 +11,10 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 
 ## Features
 
+### Showing Path
+
+Using the path-find algorithm you can see the path found with an animation
+
 ### Upload Graph
 
 **Upload Graphs** is possibile to upload **json file** in wich there are the data of nodes, edges and associated weights to rappresent the graph
