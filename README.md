@@ -61,13 +61,8 @@ Ability to upload **json file** of the graph or to download **json file** of the
 ### Resume
  1. completely responsive container
  2. Smooth and stable and drag
- 3. Node creation  
- 4. Node deletion  
- 5. Edge creation  
- 6. Edge deletion  
- 7. Edge renaming  
- 8. Edge reversal  
- 9. Edge duplication
+ 3. Node creation/deletion
+ 5. Edge creation/deletion/renaming/reversal/duplication
  10. Display the found path
  11. Upload and download of graphs
 
