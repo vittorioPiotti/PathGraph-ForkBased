@@ -12,11 +12,14 @@ SmartGraphUI is an adapted version of the SmartGraph library, developed to imple
     
 ## About
 
-#### Why SmartGraphUI
+
 <details open>
 <summary>
-  If you need a ready-to-use library for user-side representing path graphs in wich there are nodes, edges and associated weights, which offers user-firendly interface to represent, manage and interact with path graphs, then SmartGraphUI is the right solution for you.</summary>
-
+ 
+ #### Why SmartGraphUI
+ 
+ </summary>
+ If you need a ready-to-use library for user-side representing path graphs in wich there are nodes, edges and associated weights, which offers user-firendly interface to represent, manage and interact with path graphs, then SmartGraphUI is the right solution for you.
  </details>
 
 
