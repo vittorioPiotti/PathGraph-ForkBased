@@ -22,20 +22,26 @@ If you need a ready-to-use library for user-side representing path graphs in whi
 </details>
 
 
+<details open>
+<summary>Fork Based Project</summary>
 
-
-
-#### Fork based project
 This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. SmartGraphUI is therefore the adaptation of SmartGraph to improve the user-experience in a user-firendly interface.
 
 
-#### Development Methodology
+
+</details>
+
+<details open>
+<summary>Development Methodology</summary>
 
 Development choices are motivated by the desire to maintain the structure and functionality of the original code with minimal changes to adapt it to the implementations of this specific project.
 This is allowed thanks to greater transparency of the changes made in the reconstruction of the classes so that the differences between the original SmartGraph library code and that present in SmartGraphUI are more understandable
 
 
- 
+
+</details>
+
+
 ## Features
 
 > [!NOTE]  
