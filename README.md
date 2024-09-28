@@ -47,7 +47,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 #### Annotations about Interactions with Graph
 * _A maximum of two edges with different directions can be created between two nodes_
 * _The loop despite is supported in PathGraph because is implemented by [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) it is never used in in PathGraph_
-* * _Three directions are supported: the direction of edge creation, the opposite direction of edge creation, and bidirectional (the edge without arrows)_
+* _Three directions are supported: the direction of edge creation, the opposite direction of edge creation, and bidirectional (the edge without arrows)_
 
 ### Interactions with Graph Container
 
