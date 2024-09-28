@@ -29,7 +29,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 |  |  | Edit Edge |
 
 
-Other user interaction with graph events:
+Other user interaction with graph container events:
 
 | Zoom| Drag | Zoom and Drag |
 | ------------ | ------------ | ------------ |
