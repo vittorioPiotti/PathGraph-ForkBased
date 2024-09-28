@@ -29,17 +29,33 @@ This is allowed thanks to greater transparency of the changes made in the recons
 > [!NOTE]  
 > The features of the forked repository can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features)
 
-List of Features:
+**Container features**
+ 1. completely responsive container
+ 2. Smooth and stable and drag
 
- 1. Container of graph
- 2. Zoom and drag  
- 3. Node creation  
- 4. Node deletion  
- 5. Edge creation  
- 6. Edge deletion  
- 7. Edge renaming  
- 8. Edge reversal  
- 9. Edge duplication
+**Graph features**
+ 1. Node creation  
+ 2. Node deletion  
+ 3. Edge creation  
+ 4. Edge deletion  
+ 5. Edge renaming  
+ 6. Edge reversal  
+ 7. Edge duplication
+ 8. Display the found path
+
+* Max two edges with different directions connected with two nodes
+* The loop is never used in in SmartGraphUI but there in SmartGraph
+* Three directions are supported:
+    1. Direction of edge creation,
+    2. Opposite direction of edge creation,
+    3. Bidirectional (edge without arrows)
+
+
+**External features**
+ 1. upload graph from json file
+ 2. download graph in json file
+
+    
 
 ### Smart Callbacks System
 
