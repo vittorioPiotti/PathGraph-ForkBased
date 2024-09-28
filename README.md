@@ -62,12 +62,13 @@ The user make **Douple Click** on one of this components of the graph to do:
 > The gifs are taken from the SmartGraphUI software
 
 #### Annotations about Interactions with Graph
+
 * Max two edges with different directions connected with two nodes
 * The loop is never used in in SmartGraphUI but there in SmartGraph
 * Three directions are supported:
-    1. the direction of edge creation,
-    2. the opposite direction of edge creation,
-    3. and bidirectional (the edge without arrows)_
+    1. Direction of edge creation,
+    2. Opposite direction of edge creation,
+    3. Bidirectional (edge without arrows)
       
 
 ### Interactions with Graph Container
@@ -82,8 +83,8 @@ The user interactions with graph container can be:
 
 #### Annotations about Interactions with Graph Container
 
- * _There is a control thanks to which if you drag the graph beyond the limits of the container so as not to lose the graph, automatic repositioning is implemented._
- * _The graph container is responsive and available to fit into any external container_
+ * There is a control in dragging event to automatic repositioning of the graph is go out of bounds
+ * The graph container is responsive and available to fit into any external container
 
 ## Requirements
 
