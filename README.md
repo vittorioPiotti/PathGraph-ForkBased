@@ -27,7 +27,7 @@ This is allowed thanks to greater transparency of the changes made in the recons
 
 ### Default Features
 
-You can find the default features in the original forked project: [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph)[v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) 
+You can find the default features in the original forked project: [SmartGraph#features]([v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) ) 
 
 ### Showing Path
 
