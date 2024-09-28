@@ -12,10 +12,12 @@ SmartGraphUI is an adapted version of the SmartGraph library, developed to imple
     
 ## About
 
-#### Example
+
 
 <details open>
-<summary>Shopping list</summary>
+<summary>
+ **Why SmartGraphUI**
+</summary>
 
 * Vegetables
 * Fruits
