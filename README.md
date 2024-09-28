@@ -31,7 +31,7 @@ You can find the default features in the README of the original forked repositor
 
 ### Showing Path
 
-Using the path-find algorithm you can see the path found with an animation
+Ability to display the found path with an animation to highlight the edge nodes associated with it
 
 ### Upload Graph
 
