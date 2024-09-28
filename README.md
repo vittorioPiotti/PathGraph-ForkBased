@@ -74,7 +74,7 @@ The user interactions with graph container can be:
 ## Requirements
 
  * Java Version: `21.0.3` [(link)](https://www.oracle.com/java/technologies/downloads/#java21)
- * JavaFX Version: `22.0.2+4`[(link)](https://gluonhq.com/products/javafx/)
+ * JavaFX Version: `22.0.2+4` [(link)](https://gluonhq.com/products/javafx/)
  
 
 ## Licenses
