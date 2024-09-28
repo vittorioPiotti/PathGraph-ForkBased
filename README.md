@@ -28,7 +28,8 @@ This is allowed thanks to greater transparency of the changes made in the recons
 <summary>
   ⬇️ <strong>"Dnieper in the morning", 1881 - Arkhyp Kuindzhi (recreated with stargazer's profile avatars & a Python mozaic script)</strong> 🖼️
 </summary>
- 
+
+ </details>
 ## Features
 
 > [!NOTE]  
