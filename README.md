@@ -1,6 +1,6 @@
-# (JavaFX) PathGraph
+# (JavaFX) SmartGraphUI
 
-PathGraph is an adapted version of the SmartGraph library, developed to implement specific features for the representation, management, and interaction with path graphs.
+SmartGraphUI is an adapted version of the SmartGraph library, developed to implement new user-experience features in a stable user-friendly interface.
 
 ## Index
 
@@ -12,22 +12,24 @@ PathGraph is an adapted version of the SmartGraph library, developed to implemen
     
 ## About
 
-#### Why PathGraph
-If you need a ready-to-use library for representing path graphs with nodes, edges and associated weights, which offers advanced user interface features to represent, manage and interact with path graphs, then PathGraph is the right solution for you .
+#### Why SmartGraphUI
+If you need a ready-to-use library for user-side representing path graphs in wich there are nodes, edges and associated weights, which offers user-firendly interface to represent, manage and interact with path graphs, then SmartGraphUI is the right solution for you.
 
 #### Fork based project
-This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph for the specific use of path graphs
+This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. SmartGraphUI is therefore the adaptation of SmartGraph to improve the user-experience in a user-firendly interface.
+
+for the specific use of path graphs
 
 #### Development Methodology
 
 Development choices are motivated by the desire to maintain the structure and functionality of the original code with minimal changes to adapt it to the implementations of this specific project.
-This is allowed thanks to greater transparency of the changes made in the reconstruction of the classes so that the differences between the original SmartGraph library code and that present in BoostSmartGraph are more understandable
+This is allowed thanks to greater transparency of the changes made in the reconstruction of the classes so that the differences between the original SmartGraph library code and that present in SmartGraphUI are more understandable
 
 ## Features
 
-### Default Features
+### Fork Features
 
-You can find the default features in the README of the original forked repository: [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features) 
+The features of the fork can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features) 
 
 ### Display Found Path
 
@@ -35,12 +37,12 @@ Ability to display the found path with an animation to highlight the edge nodes 
 
 ### Upload Graph
 
-**Upload Graphs** is possibile to upload **json file** in wich there are the data of nodes, edges and associated weights to rappresent the graph
+Ability to upload **json file** in wich there are the data to rappresent the graph
 
 
 ### Download Graph
 
-**Download Graphs** is possibile to download **json file** in wich there are the data of nodes, edges and associated weights  of the rappresented graph
+Ability to download **json file** in wich there are the data of the rappresented graph
 
 
 ## Usage
@@ -57,11 +59,11 @@ The user make **Douple Click** on one of this components of the graph to do:
 |  |  | Split Edge |
 |  |  | Edit Edge |
 
-> The gifs are taken from the PathGraph software
+> The gifs are taken from the SmartGraphUI software
 
 #### Annotations about Interactions with Graph
 * _A maximum of two edges with different directions can be created between two nodes_
-* _The loop despite is supported in PathGraph because is implemented by [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) it is never used in in PathGraph_
+* _The loop despite is supported in SmartGraphUI because is implemented by [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) it is never used in in SmartGraphUI
 * _Three directions are supported: the direction of edge creation, the opposite direction of edge creation, and bidirectional (the edge without arrows)_
 
 ### Interactions with Graph Container
@@ -72,7 +74,7 @@ The user interactions with graph container can be:
 | ------------ | ------------ | ------------ |
 |<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoom.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/drag.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="100%"/>|
 
-> The gifs are taken from the PathGraph software
+> The gifs are taken from the SmartGraphUI software
 
 #### Annotations about Interactions with Graph Container
 
