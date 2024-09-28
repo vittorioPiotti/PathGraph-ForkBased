@@ -52,6 +52,7 @@ The user interactions with graph container can be:
 | ------------ | ------------ | ------------ |
 |<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoom.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/drag.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="100%"/>|
 
+_there is a control thanks to which if you drag the graph beyond the limits of the container so as not to lose the graph, automatic repositioning is implemented._
 
 ## Requirements
 
