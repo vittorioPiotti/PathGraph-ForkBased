@@ -10,16 +10,14 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 
 ## UI Usage
 
-### Upload Graphs
 
 **Upload Graphs** is possibile to upload **json file** in wich there are the data of nodes, edges and associated weights to rappresent the graph
 
-### Download Graphs
 
 
 **Download Graphs** is possibile to download **json file** in wich there are the data of nodes, edges and associated weights  of the rappresented graph
 
-### Interact
+
 
 The user make **Douple Click** on one of this components of the graph to do:
 | Background| Node | Edge |
