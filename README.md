@@ -37,8 +37,6 @@ The user make **Douple Click** on one of this components of the graph to do:
 
 ### Interactions with Graph Container
 
-Other user interaction with graph container events:
-
 | Zoom| Drag | Zoom and Drag |
 | ------------ | ------------ | ------------ |
 |<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoom.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/drag.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="100%"/>|
