@@ -8,6 +8,19 @@ If you need a ready-to-use library for representing path graphs with associated 
 #### Fork based project
 This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph for the specific use of path graphs
 
+## Usage
+
+**Generare Esercizi** è possibile caricando i **file json** dei nodi e degli archi per rappresentare i grafici
+
+
+L'utente effettua il **Doppio Click** su uno di questi elementi del Grafo per:
+| Sfondo| Nodo | Arco |
+| ------------ | ------------ | ------------ |
+| <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/background.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/node.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/edge.gif" alt="Icona" width="100%"/>|
+| Nuovo Nodo | Crea Arco | Elimina Arco |
+|  | Elimina Nodo | Direziona Arco |
+|  |  | Sdoppia Arco |
+|  |  | Modifica Arco |
 
 
 
