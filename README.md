@@ -6,8 +6,9 @@ PathGraph is an adapted version of the SmartGraph library, developed to implemen
 
  1. [About](#about)
  2. [Features](#features)
- 3. [Requirements](#requirements)
- 4. [Licenses](#licenses)
+ 3. [Usage](#usage)
+ 4. [Requirements](#requirements)
+ 5. [Licenses](#licenses)
     
 ## About
 
@@ -23,7 +24,6 @@ Development choices are motivated by the desire to maintain the structure and fu
 This is allowed thanks to greater transparency of the changes made in the reconstruction of the classes so that the differences between the original SmartGraph library code and that present in BoostSmartGraph are more understandable
 
 ## Features
-
 
 ### Default Features
 
@@ -41,6 +41,10 @@ Ability to display the found path with an animation to highlight the edge nodes 
 ### Download Graph
 
 **Download Graphs** is possibile to download **json file** in wich there are the data of nodes, edges and associated weights  of the rappresented graph
+
+
+## Usage
+
 
 ### Interactions with Graph
 
