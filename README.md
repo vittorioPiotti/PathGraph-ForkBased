@@ -3,24 +3,24 @@
 PathGraph is an adapted version of the SmartGraph library, developed to implement specific features for the representation, management, and interaction with path graphs.
 
 #### Why PathGraph
-If you need a ready-to-use library for representing path graphs with associated nodes, edges and weights, which offers advanced user interface features to represent, manage and interact with path graphs, then PathGraph is the right solution for you .
+If you need a ready-to-use library for representing path graphs with nodes, edges and associated weights, which offers advanced user interface features to represent, manage and interact with path graphs, then PathGraph is the right solution for you .
 
 #### Fork based project
 This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph for the specific use of path graphs
 
-## Usage
+## UI Usage
 
-**Generare Esercizi** è possibile caricando i **file json** dei nodi e degli archi per rappresentare i grafici
+**Create Exercise** is possibile to upload **json file** in wich there are the data of nodes, edges and associated weights to rappresent the graph
 
 
-L'utente effettua il **Doppio Click** su uno di questi elementi del Grafo per:
+The user make **Douple Click** on one of this components of the graph to do:
 | Sfondo| Nodo | Arco |
 | ------------ | ------------ | ------------ |
 | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickBackground.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickNode.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickEdge.gif" alt="Icona" width="100%"/>|
-| Nuovo Nodo | Crea Arco | Elimina Arco |
-|  | Elimina Nodo | Direziona Arco |
-|  |  | Sdoppia Arco |
-|  |  | Modifica Arco |
+| New Node | New Edge | Delete Edge |
+|  | Delete Node | Direct Edge |
+|  |  | Split Edge |
+|  |  | Edit Edge |
 
 
 
