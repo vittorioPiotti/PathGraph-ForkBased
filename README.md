@@ -2,6 +2,15 @@
 
 PathGraph is an adapted version of the SmartGraph library, developed to implement specific features for the representation, management, and interaction with path graphs.
 
+## Index
+
+ 1. [About](#about)
+ 2. [Features](#features)
+ 3. [Requirements](#requirements)
+ 4. [Licenses](#licenses)
+    
+## About
+
 #### Why PathGraph
 If you need a ready-to-use library for representing path graphs with nodes, edges and associated weights, which offers advanced user interface features to represent, manage and interact with path graphs, then PathGraph is the right solution for you .
 
