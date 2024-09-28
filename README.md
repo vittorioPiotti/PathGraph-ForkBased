@@ -62,9 +62,9 @@ Ability to upload **json file** of the graph or to download **json file** of the
  1. completely responsive container
  2. Smooth and stable and drag
  3. Node creation/deletion
- 5. Edge creation/deletion/renaming/reversal/duplication
- 10. Display the found path
- 11. Upload and download of graphs
+ 4. Edge creation/deletion/renaming/reversal/duplication
+ 5. Display the found path
+ 6. Upload and download of graphs
 
 
 
