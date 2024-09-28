@@ -16,7 +16,7 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 L'utente effettua il **Doppio Click** su uno di questi elementi del Grafo per:
 | Sfondo| Nodo | Arco |
 | ------------ | ------------ | ------------ |
-| <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/" alt="Icona" width="100%"/>|
+| <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickBackground.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickNode.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickEdge.gif" alt="Icona" width="100%"/>|
 | Nuovo Nodo | Crea Arco | Elimina Arco |
 |  | Elimina Nodo | Direziona Arco |
 |  |  | Sdoppia Arco |
