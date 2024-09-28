@@ -70,8 +70,6 @@ Ability to upload **json file** of the graph or to download **json file** of the
 
 
 
-
-
 ## Usage
 
 
