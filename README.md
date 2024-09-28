@@ -2,23 +2,25 @@
 
 PathGraph is an adapted version of the SmartGraph library, developed to implement specific features for the representation, management, and interaction with path graphs.
 
-### Why PathGraph
+#### Why PathGraph
 If you need a ready-to-use library for representing path graphs with nodes, edges and associated weights, which offers advanced user interface features to represent, manage and interact with path graphs, then PathGraph is the right solution for you .
 
-### Fork based project
+#### Fork based project
 This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph for the specific use of path graphs
 
 
-## UI Usage
+## Features
 
+#### Upload Graph
 
 **Upload Graphs** is possibile to upload **json file** in wich there are the data of nodes, edges and associated weights to rappresent the graph
 
 
+#### Download Graph
 
 **Download Graphs** is possibile to download **json file** in wich there are the data of nodes, edges and associated weights  of the rappresented graph
 
-
+#### Interactions with Graph
 
 The user make **Douple Click** on one of this components of the graph to do:
 | Background| Node | Edge |
@@ -29,6 +31,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 |  |  | Split Edge |
 |  |  | Edit Edge |
 
+#### Interactions with Container Graph
 
 Other user interaction with graph container events:
 
