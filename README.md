@@ -24,6 +24,11 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 Development choices are motivated by the desire to maintain the structure and functionality of the original code with minimal changes to adapt it to the implementations of this specific project.
 This is allowed thanks to greater transparency of the changes made in the reconstruction of the classes so that the differences between the original SmartGraph library code and that present in SmartGraphUI are more understandable
 
+<details open>
+<summary>
+  ⬇️ <strong>"Dnieper in the morning", 1881 - Arkhyp Kuindzhi (recreated with stargazer's profile avatars & a Python mozaic script)</strong> 🖼️
+</summary>
+ 
 ## Features
 
 > [!NOTE]  
