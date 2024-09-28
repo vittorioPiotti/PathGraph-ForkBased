@@ -11,16 +11,16 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 
 ## Features
 
-#### Upload Graph
+### Upload Graph
 
 **Upload Graphs** is possibile to upload **json file** in wich there are the data of nodes, edges and associated weights to rappresent the graph
 
 
-#### Download Graph
+### Download Graph
 
 **Download Graphs** is possibile to download **json file** in wich there are the data of nodes, edges and associated weights  of the rappresented graph
 
-#### Interactions with Graph
+### Interactions with Graph
 
 The user make **Douple Click** on one of this components of the graph to do:
 | Background| Node | Edge |
@@ -31,7 +31,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 |  |  | Split Edge |
 |  |  | Edit Edge |
 
-#### Interactions with Container Graph
+### Interactions with Graph Container
 
 Other user interaction with graph container events:
 
