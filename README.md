@@ -29,10 +29,9 @@ This is allowed thanks to greater transparency of the changes made in the recons
 > [!NOTE]  
 > The features of the forked repository can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features)
 
-### Managing Optimization
+List of Features:
 
-To create a user-friendly and ready-to-use interface, the user experience has been improved by defining the code structure more restrictively and redefining event logic:  
- 1. Responsive container  
+ 1. Container of graph
  2. Zoom and drag  
  3. Node creation  
  4. Node deletion  
@@ -40,7 +39,7 @@ To create a user-friendly and ready-to-use interface, the user experience has be
  6. Edge deletion  
  7. Edge renaming  
  8. Edge reversal  
- 9. Edge duplication  
+ 9. Edge duplication
 
 ### Smart Callbacks System
 
