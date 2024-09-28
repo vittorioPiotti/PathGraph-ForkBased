@@ -45,7 +45,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 |  |  | Edit Edge |
 
 * _Can be created maxium two edges with different direction beetwen two nodes_
-* _The loop is supported by [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) but is never used in in PathGraph _
+* _The loop is supported by [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) but is never used in in PathGraph_
 
 ### Interactions with Graph Container
 
