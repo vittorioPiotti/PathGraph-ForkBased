@@ -59,7 +59,8 @@ The user interactions with graph container can be:
 
 #### Annotations about Interactions with Graph Container
 
-_There is a control thanks to which if you drag the graph beyond the limits of the container so as not to lose the graph, automatic repositioning is implemented._
+ * _There is a control thanks to which if you drag the graph beyond the limits of the container so as not to lose the graph, automatic repositioning is implemented._
+ * _The chart container is responsive and available to fit into any external container_
 
 ## Requirements
 
