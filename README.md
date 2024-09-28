@@ -20,7 +20,7 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 **Zoom And Drag**
 
 
-<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoomAndDragEvent.gif" alt="Icona" width="500"/>
+<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="500"/>
 
 The user make **Douple Click** on one of this components of the graph to do:
 | Background| Node | Edge |
