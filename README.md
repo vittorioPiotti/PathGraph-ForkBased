@@ -16,7 +16,9 @@ SmartGraphUI is an adapted version of the SmartGraph library, developed to imple
 
 <details open>
 <summary>
- **Why SmartGraphUI**
+ 
+ ####Why SmartGraphUI
+ 
 </summary>
 
 * Vegetables
