@@ -29,7 +29,7 @@ This is allowed thanks to greater transparency of the changes made in the recons
 
 You can find the default features in the README of the original forked repository: [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features) 
 
-### Showing Path
+### Display Found Path
 
 Ability to display the found path with an animation to highlight the edge nodes associated with it
 
