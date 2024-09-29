@@ -61,7 +61,7 @@ Ability to display the found path with an animation to highlight the edge nodes 
 
 Ability to upload **json file** of the graph or to download **json file** of the graph
 
-#### Resume
+### Resume
 
  1. completely responsive container
  2. Smooth and stable and drag
