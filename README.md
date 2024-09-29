@@ -36,7 +36,13 @@ This is allowed thanks to greater transparency of the changes made in the recons
 > [!NOTE]  
 > The features of the forked repository can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features)
 
+### Index
 
+ 1. [Smart Callbacks System](Smart-Callbacks-System)
+ 2. [Intuitive UI System](Intuitive-UI-System)
+ 3. [Display Found Path](Display-Found-Path)
+ 4. [Upload and Download Graphs](Upload-and-Download-Graphs)
+ 5. [Resume](#Resume)
 
 #### Smart Callbacks System
 
