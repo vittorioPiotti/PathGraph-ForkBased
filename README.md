@@ -13,30 +13,15 @@ SmartGraphUI is an adapted version of the SmartGraph library, developed to imple
 ## About
 
 
-**Why SmartGraphUI**
-
-
- 
-<details open>
-
-<summary></summary>
+#### Why SmartGraphUI
 
 If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated weights, which offers a user-friendly interface to represent, manage, and interact with path graphs, then SmartGraphUI is the right solution for you.
 
-</details>
-
-
-<details open>
-<summary>Fork Based Project</summary>
+#### Fork Based Project
 
 This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. SmartGraphUI is therefore the adaptation of SmartGraph to improve the user-experience in a user-firendly interface.
 
-
-
-</details>
-
-<details open>
-<summary>Development Methodology</summary>
+#### Development Methodology
 
 Development choices are motivated by the desire to maintain the structure and functionality of the original code with minimal changes to adapt it to the implementations of this specific project.
 This is allowed thanks to greater transparency of the changes made in the reconstruction of the classes so that the differences between the original SmartGraph library code and that present in SmartGraphUI are more understandable
@@ -53,42 +38,24 @@ This is allowed thanks to greater transparency of the changes made in the recons
 
 
 
-
-<details open>
-<summary>Smart Callbacks System</summary>
+#### Smart Callbacks System
 
 Each event is associated with a callback that is defined during the constructor instantiation.  
 This ensures that developers can apply their custom actions to each event.
 
-</details>
-
-<details open>
-<summary>Intuitive UI System</summary>
-
+#### Intuitive UI System
 An effective and minimal user interface has been designed based on the Less-is-More principle.  
 It is possible to choose whether to use the default UI or configure custom actions for the associated events.
 
-</details>
-
-
-<details open>
-<summary>Display Found Path</summary>
+#### Display Found Path
 
 Ability to display the found path with an animation to highlight the edge nodes associated with it
 
-</details>
-
-
-<details open>
-<summary>Upload and Download Graphs</summary>
+#### Upload and Download Graphs
 
 Ability to upload **json file** of the graph or to download **json file** of the graph
 
-</details>
-
-
-<details open>
-<summary>Resume</summary>
+#### Resume
 
  1. completely responsive container
  2. Smooth and stable and drag
@@ -97,10 +64,6 @@ Ability to upload **json file** of the graph or to download **json file** of the
  5. Display the found path
  6. Upload and download of graphs
     
-</details>
-
-
-
 
 
 
