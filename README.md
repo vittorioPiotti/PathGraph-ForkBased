@@ -47,42 +47,54 @@ This is allowed thanks to greater transparency of the changes made in the recons
 > [!NOTE]  
 > The features of the forked repository can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features)
 
-### Index
- 1. [Smart Callbacks System](#Smart-Callbacks-System)
- 2. [Intuitive UI System](#Intuitive-UI-System)
- 3. [Display Found Path](#Display-Found-Path)
- 4. [Upload and Download Graphs](#Upload-and-Download-Graphs)
- 5. [Resume](#Resume)
 
-    
-### Smart Callbacks System
+
+
+<details open>
+<summary>Smart Callbacks System</summary>
 
 Each event is associated with a callback that is defined during the constructor instantiation.  
 This ensures that developers can apply their custom actions to each event.
 
-### Intuitive UI System
+</details>
+
+<details open>
+<summary>Intuitive UI System</summary>
 
 An effective and minimal user interface has been designed based on the Less-is-More principle.  
 It is possible to choose whether to use the default UI or configure custom actions for the associated events.
 
+</details>
 
-### Display Found Path
+
+<details open>
+<summary>Display Found Path</summary>
 
 Ability to display the found path with an animation to highlight the edge nodes associated with it
 
-### Upload and Download Graphs
+</details>
+
+
+<details open>
+<summary>Upload and Download Graphs</summary>
 
 Ability to upload **json file** of the graph or to download **json file** of the graph
 
+</details>
 
 
-### Resume
+<details open>
+<summary>Resume</summary>
+
  1. completely responsive container
  2. Smooth and stable and drag
  3. Node creation/deletion
  4. Edge creation/deletion/renaming/reversal/duplication
  5. Display the found path
  6. Upload and download of graphs
+    
+</details>
+
 
 
 
