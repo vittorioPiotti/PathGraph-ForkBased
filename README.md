@@ -133,4 +133,4 @@ The user interactions with graph container can be:
 
 
 > [!NOTE]
-> Di **Bootstrap** sono state utilizzate solo le icone SVG
+> SVG icons from **Bootstrap**  
