@@ -46,8 +46,7 @@ This is allowed thanks to greater transparency of the changes made in the recons
 
  * Now method parameters are generic and independent of internal classes.
  * The logic has been made more high-level so as to more easily manipulate the components of the graph
- * Graph management requires parameters only in the label of the nodes involved in the method
-
+ * Graph management requires as parameters only the labels of the nodes involved in the method
 
 ### Callbacks System
 
