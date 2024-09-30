@@ -57,7 +57,7 @@ This is allowed thanks to greater transparency of the changes made in the recons
  * The deactivation of graph interactions is able with empty callbacks.
    This involves defining the components as buttons for actions on the graph.
 
-#### Intuitive UI System
+#### Intuitive UI 
 An effective and minimal user interface has been designed based on the Less-is-More principle.  
 It is possible to choose whether to use the default UI or configure custom actions for the associated events.
 
