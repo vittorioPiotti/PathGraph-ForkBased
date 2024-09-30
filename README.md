@@ -45,12 +45,14 @@ This is allowed thanks to greater transparency of the changes made in the recons
 
 #### Methods refactoring 
 
- * Each event on the graph is associated with a callback that is defined during the constructor instantiation.
-   
-   This ensures that developers can apply their custom actions to each event.
-   
- * The deactivation of graph interactions is able with empty callbacks
-   
+|Node|Edge|
+|-|-|
+|new node|new edge|
+|delete node|delete edge|
+||rename edge|
+||rotate edge|
+||fork edge|
+
 #### Callbacks System
 
 | |Hover|Click|Drag|Scroll|
