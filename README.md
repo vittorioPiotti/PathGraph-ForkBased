@@ -96,6 +96,10 @@ Ability to upload **json file** of the graph or to download **json file** of the
 
 ## Usage
 
+### Edge Directions
+
+|Left|Right|Bidirectional|
+|---|---|---|
 
 ### Interactions with Graph
 
