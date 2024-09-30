@@ -114,8 +114,6 @@ The user make **Douple Click** on one of this components of the graph to do:
 
 > Gifs from SmartGraphUI 
 
-#### Annotations about Interactions with Graph
-
 Max two edges with different directions connected with two nodes
 
 ### Interactions with Graph Container
