@@ -44,6 +44,10 @@ This is allowed thanks to greater transparency of the changes made in the recons
 ||rotate edge|download graph|
 ||fork edge||
 
+ * Now method parameters are generic and independent of internal classes.
+ * The logic has been made more high-level so as to more easily manipulate the components of the graph only from the labels of the nodes involved
+
+
 ### Callbacks System
 
 | |Hover|Click|Drag|Scroll|
