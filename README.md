@@ -101,6 +101,9 @@ Ability to upload **json file** of the graph or to download **json file** of the
 |Left|Right|Bidirectional|
 |---|---|---|
 
+Max two edges with different directions connected with two nodes
+
+
 ### Interactions with Graph
 
 The user make **Douple Click** on one of this components of the graph to do:
@@ -114,7 +117,6 @@ The user make **Douple Click** on one of this components of the graph to do:
 
 > Gifs from SmartGraphUI 
 
-Max two edges with different directions connected with two nodes
 
 ### Interactions with Graph Container
 
