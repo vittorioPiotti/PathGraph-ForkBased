@@ -104,7 +104,7 @@ Ability to upload **json file** of the graph or to download **json file** of the
 Max two edges with different directions connected with two nodes
 
 
-### Interactions with Graph
+### Graph Interactions
 
 The user make **Douple Click** on one of this components of the graph to do:
 | Background| Node | Edge |
@@ -118,7 +118,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 > Gifs from SmartGraphUI 
 
 
-### Interactions with Graph Container
+### Graph Container Interactions
 
 The user interactions with graph container can be:
 
