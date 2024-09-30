@@ -104,7 +104,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 |  |  | Split Edge |
 |  |  | Edit Edge |
 
-> Gifs taken from SmartGraphUI 
+> Gifs from SmartGraphUI 
 
 #### Annotations about Interactions with Graph
 
@@ -124,7 +124,7 @@ The user interactions with graph container can be:
 | ------------ | ------------ | ------------ |
 |<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoom.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/drag.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="100%"/>|
 
-> Gifs taken from SmartGraphUI 
+> Gifs from SmartGraphUI 
 
 #### Annotations about Interactions with Graph Container
 
