@@ -48,7 +48,7 @@ This is allowed thanks to greater transparency of the changes made in the recons
 
 | |Hover|Click|Drag|Scroll|
 |-|-|-|-|-|
-|**Node**|Yes|Yes| | |
+|**Node**|Yes|Yes|Yes | |
 |**Edge**|Yes|Yes| | |
 |**Background**| |Yes|Yes|Yes|
 
