@@ -44,11 +44,18 @@ This is allowed thanks to greater transparency of the changes made in the recons
  4. [Upload and Download Graphs](Upload-and-Download-Graphs)
  5. [Resume](#Resume)
 
-#### Callbacks Managing
+#### Methods refactoring 
 
  * Each event on the graph is associated with a callback that is defined during the constructor instantiation.  
    This ensures that developers can apply their custom actions to each event.
  * The deactivation of graph interactions is able with empty callbacks
+   
+#### Callbacks Managing
+
+ * Each event on the graph is associated with a callback that is defined during the constructor instantiation.  
+   This ensures that developers can apply their custom actions to each event.
+ * The deactivation of graph interactions is able with empty callbacks.
+   This involves defining the components as buttons for actions on the graph.
 
 #### Intuitive UI System
 An effective and minimal user interface has been designed based on the Less-is-More principle.  
