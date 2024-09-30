@@ -59,7 +59,7 @@ This is allowed thanks to greater transparency of the changes made in the recons
 |**Edge**|Yes|Yes| | |
 |**Background**| |Yes|Yes|Yes|
 
-> Empty callbacks disable graph interactions involving to set action in others component to manage the graph
+> Empty callbacks disable graph interactions so set actions in your components to manage the graph
 
 
 
