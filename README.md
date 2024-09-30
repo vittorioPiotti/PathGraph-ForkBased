@@ -27,7 +27,9 @@ Development choices are motivated by the desire to maintain the structure and fu
 This is allowed thanks to greater transparency of the changes made in the reconstruction of the classes so that the differences between the original SmartGraph library code and that present in SmartGraphUI are more understandable
 
 
-
+### Example Checklist
+- ![Check](https://raw.githubusercontent.com/FezVrasta/font-awesome/4.7.0/svgs/regular/check-square.svg) Item 1
+- ![Not Check](https://raw.githubusercontent.com/FezVrasta/font-awesome/4.7.0/svgs/regular/square.svg) Item 2
 </details>
 
 
