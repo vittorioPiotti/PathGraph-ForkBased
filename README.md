@@ -45,13 +45,13 @@ This is allowed thanks to greater transparency of the changes made in the recons
 
 #### Methods refactoring 
 
-|Node|Edge|
-|-|-|
-|new node|new edge|
-|delete node|delete edge|
-||rename edge|
-||rotate edge|
-||fork edge|
+|Node|Edge|Graph|
+|-|-|-|
+|new node|new edge|screenshot|
+|delete node|delete edge|display path found|
+||rename edge|upload graph|
+||rotate edge|download graph|
+||fork edge||
 
 #### Callbacks System
 
