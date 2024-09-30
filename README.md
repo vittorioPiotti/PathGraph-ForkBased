@@ -27,10 +27,7 @@ Development choices are motivated by the desire to maintain the structure and fu
 This is allowed thanks to greater transparency of the changes made in the reconstruction of the classes so that the differences between the original SmartGraph library code and that present in SmartGraphUI are more understandable
 
 
-### Example Checklist
-- ![Check](https://raw.githubusercontent.com/FezVrasta/font-awesome/4.7.0/svgs/regular/check-square.svg) Item 1
-- ![Not Check](https://raw.githubusercontent.com/FezVrasta/font-awesome/4.7.0/svgs/regular/square.svg) Item 2
-</details>
+
 
 
 ## Features
@@ -60,12 +57,9 @@ Callbacks on component of the graph _node, edge, background_:
 
 |Hover|Click|Drag|Scroll|
 |-|-|-|-|
-|Node| | | |
-|Edge| | | | 
-|Background| | | |
- * **Node** hover, click, drag
- * **Edge** hover, click
- * **Background** click, drag, scroll
+|Node|Yes|Yes| |
+|Edge|Yes|Yes| | 
+|Background| |Yes|Yes|Yes|
 
 The deactivation of graph interactions is able with empty callbacks.
 
