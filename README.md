@@ -54,12 +54,11 @@ This is allowed thanks to greater transparency of the changes made in the recons
    
 #### Callbacks System
 
-Each event on the graph is associated with a callback that is defined during the constructor instantiation.
+Callbacks on component of the graph _node, edge, background_:
+ * **Node** hover, click, drag
+ * **Edge** hover, click
+ * **Background** click, drag, scroll
 
-This ensures that developers can apply their custom actions to each event.
-
-_refers to clicking on the node, edge, or background_
-   
 The deactivation of graph interactions is able with empty callbacks.
 
 This involves defining the components as buttons for actions on the graph.
