@@ -53,11 +53,11 @@ This is allowed thanks to greater transparency of the changes made in the recons
    
 #### Callbacks System
 
-|Hover|Click|Drag|Scroll|
-|-|-|-|-|
-|**Node**|Yes|Yes| |
-|**Edge**|Yes|Yes| | 
-|**Background**| |Yes|Yes|Yes|
+| |Hover|Click|Drag|Scroll|
+|-|-|-|-|-|
+|**Node**|Yes|Yes| | |
+|**Edge**|Yes|Yes| | |
+|**Background**| | |Yes|Yes|Yes|
 
 The deactivation of graph interactions is able with empty callbacks.
 
