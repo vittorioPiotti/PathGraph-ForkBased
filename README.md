@@ -53,13 +53,11 @@ This is allowed thanks to greater transparency of the changes made in the recons
    
 #### Callbacks System
 
-Callbacks on component of the graph _node, edge, background_:
-
 |Hover|Click|Drag|Scroll|
 |-|-|-|-|
-|Node|Yes|Yes| |
-|Edge|Yes|Yes| | 
-|Background| |Yes|Yes|Yes|
+|**Node**|Yes|Yes| |
+|**Edge**|Yes|Yes| | 
+|**Background**| |Yes|Yes|Yes|
 
 The deactivation of graph interactions is able with empty callbacks.
 
