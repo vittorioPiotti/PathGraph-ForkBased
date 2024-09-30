@@ -57,7 +57,7 @@ This is allowed thanks to greater transparency of the changes made in the recons
 |-|-|-|-|-|
 |**Node**|Yes|Yes| | |
 |**Edge**|Yes|Yes| | |
-|**Background**| |Yes|Yes|Yes|Yes|
+|**Background**| |Yes|Yes|Yes|
 
 > Empty callbacks disable graph interactions involving to set action in others component to manage the graph
 
