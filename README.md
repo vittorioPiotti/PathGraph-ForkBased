@@ -30,18 +30,8 @@ This is allowed thanks to greater transparency of the changes made in the recons
 
 
 
-## Features
+## Updates
 
-> [!NOTE]  
-> The features of the forked repository can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features)
-
-### Index
-
- 1. [Smart Callbacks System](Smart-Callbacks-System)
- 2. [Intuitive UI System](Intuitive-UI-System)
- 3. [Display Found Path](Display-Found-Path)
- 4. [Upload and Download Graphs](Upload-and-Download-Graphs)
- 5. [Resume](#Resume)
 
 #### Methods refactoring 
 
@@ -64,8 +54,19 @@ This is allowed thanks to greater transparency of the changes made in the recons
 > **Empty callbacks** disable graph interactions so set actions in your components to manage the graph _(e.g. button to create new edge)_
 
 
+### Features
+
+> [!NOTE]  
+> The features of the forked repository can be found at [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph?tab=readme-ov-file#features)
 
 
+
+### Index
+
+ 1. [Intuitive UI System](Intuitive-UI-System)
+ 2. [Display Found Path](Display-Found-Path)
+ 3. [Upload and Download Graphs](Upload-and-Download-Graphs)
+ 4. [Resume](#Resume)
 
 
 #### Intuitive UI 
