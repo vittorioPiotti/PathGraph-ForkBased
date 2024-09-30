@@ -59,8 +59,7 @@ This is allowed thanks to greater transparency of the changes made in the recons
 |**Edge**|Yes|Yes| | |
 |**Background**| | |Yes|Yes|Yes|
 
-> The deactivation of graph interactions is able with empty callbacks.
-> This involves defining the components as buttons for actions on the graph.
+> Empty callbacks disable graph interactions involving to set action in others component to manage the graph
 
 
 
