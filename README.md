@@ -55,6 +55,12 @@ This is allowed thanks to greater transparency of the changes made in the recons
 #### Callbacks System
 
 Callbacks on component of the graph _node, edge, background_:
+
+|Hover|Click|Drag|Scroll|
+|-|-|-|-|
+|Node| | | |
+|Edge| | | | 
+|Background| | | |
  * **Node** hover, click, drag
  * **Edge** hover, click
  * **Background** click, drag, scroll
