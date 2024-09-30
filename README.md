@@ -5,7 +5,7 @@ SmartGraphUI is an adapted version of the SmartGraph library, developed to imple
 ## Index
 
  1. [About](#about)
- 2. [Updates](#features)
+ 2. [Updates](#updates)
  3. [Features](#features)
  4. [Usage](#usage)
  5. [Requirements](#requirements)
