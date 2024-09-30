@@ -116,8 +116,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 
 #### Annotations about Interactions with Graph
 
-* Max two edges with different directions connected with two nodes
-* The loop is never used in in SmartGraphUI but there in SmartGraph
+Max two edges with different directions connected with two nodes
 
 ### Interactions with Graph Container
 
