@@ -17,6 +17,7 @@ SmartGraphUI is an adapted version of the [SmartGraph](https://github.com/brunom
 ## About
 
 
+<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/test1.png" alt="Icona" width="300"/>
 
 
 #### Why SmartGraphUI
@@ -77,7 +78,6 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 An effective and minimal user interface has been designed based on the Less-is-More principle.  
 It is possible to choose whether to use the default UI or configure custom actions for the associated events.
 
-<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/test1.png" alt="Icona" width="100%"/>
 
 
 #### Display Found Path
