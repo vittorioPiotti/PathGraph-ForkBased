@@ -131,7 +131,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 
 The user interactions with graph container can be:
 
-| Zoom| Drag | Zoom and Drag |
+| Scroll to Zoom| Drag to Move | Zoom and Drag |
 | ------------ | ------------ | ------------ |
 |<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoom.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/drag.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="100%"/>|
 
