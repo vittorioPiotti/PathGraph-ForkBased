@@ -75,7 +75,7 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 
 #### Intuitive UI 
 
-<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/test1.png" alt="Icona" width="300"/>
+<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/test2.png" alt="Icona" width="100%"/>
 
 
 An effective and minimal user interface has been designed based on the Less-is-More principle.  
