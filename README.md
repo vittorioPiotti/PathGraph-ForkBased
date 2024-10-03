@@ -39,7 +39,7 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 |-|-|-|
 |new node|new edge|screenshot|
 |delete node|delete edge|display path found|
-||rename edge|upload graph|
+|rename node|rename edge|upload graph|
 ||rotate edge|download graph|
 ||fork edge||
 
