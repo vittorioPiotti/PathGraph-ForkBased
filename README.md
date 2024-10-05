@@ -5,7 +5,7 @@ SmartGraphUI is an adapted version of the [SmartGraph](https://github.com/brunom
 
 <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/preview906.png" alt="Icona" width="100%"/>
 
-> Image from SmartGraphUI 
+
 
 ---
 
