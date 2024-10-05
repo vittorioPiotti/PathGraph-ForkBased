@@ -172,5 +172,5 @@ The user interactions with graph container can be:
 
 ---
 
-I hope you find SmartGraph useful and look forward to seeing the projects you create with it!
+I hope you find SmartGraph useful and look forward to seeing the projects you create with it! 💫
 
