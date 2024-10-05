@@ -4,6 +4,7 @@
 SmartGraphUI is an adapted version of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) library, developed to implement new user-experience features in a stable user-friendly interface.
 
 <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/preview906.png" alt="Icona" width="100%"/>
+
 > Image from SmartGraphUI 
 
 ---
@@ -79,6 +80,7 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 #### Intuitive UI 
 
 <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/preview82.png" alt="Icona" width="100%"/>
+
 > Image from SmartGraphUI 
 
 
