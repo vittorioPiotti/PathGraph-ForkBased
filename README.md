@@ -168,4 +168,9 @@ The user interactions with graph container can be:
 
 
 > [!NOTE]
-> SVG icons from **Bootstrap**  
+> SVG icons from **Bootstrap**
+
+---
+
+I hope you find SmartGraph useful and look forward to seeing the projects you create with it!
+
