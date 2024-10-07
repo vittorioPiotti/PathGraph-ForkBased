@@ -1,7 +1,7 @@
-# (JavaFX) PathGraphGUI
+# (JavaFX) PathGraph
 
 
-PathGraphGUI is an adapted version of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) library, developed to implement new user-experience features in a stable user-friendly interface.
+PathGraph is an adapted version of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) library, developed to implement new user-experience features in a stable user-friendly interface.
 
 <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/preview906.png" alt="Icona" width="100%"/>
 
@@ -24,13 +24,13 @@ PathGraphGUI is an adapted version of the [SmartGraph](https://github.com/brunom
 
 
 
-#### Why PathGraphGUI
+#### Why PathGraph
 
-If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated weights, which offers a user-friendly interface to represent, manage, and interact with path graphs, then PathGraphGUI is the right solution for you.
+If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated weights, which offers a user-friendly interface to represent, manage, and interact with path graphs, then PathGraph is the right solution for you.
 
 #### Fork Based Project
 
-This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. PathGraphGUI is therefore the adaptation of SmartGraph to improve the user-experience in a user-firendly interface.
+This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph to improve the user-experience in a user-firendly interface.
 
 
 
@@ -82,7 +82,7 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 
 <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/preview82.png" alt="Icona" width="100%"/>
 
-> Image from PathGraphGUI 
+> Image from PathGraph 
 
 
 An effective and minimal user interface has been designed based on the Less-is-More principle.  
@@ -131,7 +131,7 @@ The user make **Douple Click** on one of this components of the graph to do:
 |  |  | Split Edge |
 |  |  | Edit Edge |
 
-> Gifs from PathGraphGUI 
+> Gifs from PathGraph 
 
 
 ### Graph Container Interactions
@@ -142,7 +142,7 @@ The user interactions with graph container can be:
 | ------------ | ------------ | ------------ |
 |<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoom.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/drag.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="100%"/>|
 
-> Gifs from PathGraphGUI 
+> Gifs from PathGraph 
 
 #### Annotations about Interactions with Graph Container
 
@@ -159,7 +159,7 @@ The user interactions with graph container can be:
 
 | Component          | Version         | Copyright                                      | License                                                                                            |
 |---------------------|------------------|------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [PathGraphGUI](https://github.com/vittorioPiotti/JavaFXPathGraph) | Not released    | 2024 Vittorio Piotti [(GitHub page)](https://github.com/vittorioPiotti) [(Personal page)](https://vittoriopiotti.altervista.org/)            | [GPL-3.0 ](https://github.com/vittorioPiotti/JavaFXPathGraph/blob/master/LICENSE.txt) |
+| [PathGraph](https://github.com/vittorioPiotti/JavaFXPathGraph) | Not released    | 2024 Vittorio Piotti [(GitHub page)](https://github.com/vittorioPiotti) [(Personal page)](https://vittoriopiotti.altervista.org/)            | [GPL-3.0 ](https://github.com/vittorioPiotti/JavaFXPathGraph/blob/master/LICENSE.txt) |
 | [JavaFXSmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph)        | [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0)           | 2019 - 2024 Bruno Silva [(GitHub page)](https://github.com/brunomnsilva) [(Personal page)](https://www.brunomnsilva.com/)                          | [MIT](https://github.com/brunomnsilva/JavaFXSmartGraph/blob/master/LICENSE.txt)       |
 | Bootstrap          | v4.0.0    | 2011-2018 The Bootstrap Authors   | [MIT ](https://github.com/twbs/bootstrap/blob/master/LICENSE) |
 
@@ -172,5 +172,5 @@ The user interactions with graph container can be:
 
 ---
 
-I hope you find PathGraphGUI useful and look forward to seeing the projects you create with it! 💫
+I hope you find PathGraph useful and look forward to seeing the projects you create with it! 💫
 
