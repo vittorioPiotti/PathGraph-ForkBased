@@ -3,7 +3,7 @@
 
 PathGraph is an adapted version of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) library, developed to implement new user-experience features in a stable user-friendly interface.
 
-<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/preview906.png" alt="Icona" width="100%"/>
+<img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/preview906.png" alt="Icona" width="100%"/>
 
 
 
@@ -80,7 +80,7 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 
 #### Intuitive UI 
 
-<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/preview82.png" alt="Icona" width="100%"/>
+<img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/preview82.png" alt="Icona" width="100%"/>
 
 > Image from PathGraph 
 
@@ -125,7 +125,7 @@ Max two edges with different directions connected with two nodes
 The user make **Douple Click** on one of this components of the graph to do:
 | Background| Node | Edge |
 | ------------ | ------------ | ------------ |
-| <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickBackground.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickNode.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/clickEdge.gif" alt="Icona" width="100%"/>|
+| <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/clickBackground.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/clickNode.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/clickEdge.gif" alt="Icona" width="100%"/>|
 | New Node | New Edge | Delete Edge |
 |  | Delete Node | Direct Edge |
 |  |  | Split Edge |
@@ -140,7 +140,7 @@ The user interactions with graph container can be:
 
 | Scroll to Zoom| Drag to Move | Zoom and Drag |
 | ------------ | ------------ | ------------ |
-|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/zoom.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/drag.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-JavaFX/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="100%"/>|
+|<img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/zoom.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/drag.gif" alt="Icona" width="100%"/>|<img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/ZoomAndDragEvent.gif" alt="Icona" width="100%"/>|
 
 > Gifs from PathGraph 
 
