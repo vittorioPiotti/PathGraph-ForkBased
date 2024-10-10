@@ -114,7 +114,7 @@ Provided to represent path graphs through nodes, edges, and associated costs wit
 
 ## 2. User Experience <div id="user-experience"/>
 
-<img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/ultimate.gif" alt="Icona" width="300"/>
+<img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/ultimate.gif" alt="Icona" width="500"/>
 
 
 <details>
