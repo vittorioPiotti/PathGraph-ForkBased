@@ -866,7 +866,7 @@ pg.enableListenersPane((boolean) true);
 pg.setAutomaticLayout();
 ```
 
-> _Metodo originario di SmartGraph [(see)](https://github.com/brunomnsilva/JavaFXSmartGraph#basic-usage)_
+> _Original method of SmartGraph [(see)](https://github.com/brunomnsilva/JavaFXSmartGraph#basic-usage)_
 
 
 
