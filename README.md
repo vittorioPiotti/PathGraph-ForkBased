@@ -1,4 +1,3 @@
-
 # (Java FX) PathGraph
 
 <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/socialpreview26.png" alt="Icona" width="100%"/>
@@ -66,7 +65,7 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 
 Provided to represent path graphs through nodes, edges, and associated costs with the following logic:
 
-* Nodes can be only characters with uppercase alphabet letters to maxium 26 nodes
+* Nodes can be only Stringacters with uppercase alphabet letters to maxium 26 nodes
 * Not provided over limits of two edges with same direction between two same nodes
 * Not provided loops creation
 * Edge cost can be only `int` variable type to rappresent integer numbers
@@ -452,7 +451,7 @@ public class Main extends Application {
 boolean flag = (
   pg.newNode(
     /* node name to create */
-    (char) 'A'
+    (String) "A"
   )
 );
 ```
@@ -475,10 +474,10 @@ boolean flag = (
   pg.renameNode(
 
     /* last node name */
-    (char)'A',
+    (String) "A",
 
     /* new node name */
-    (char)'B'
+    (String) "B"
 
   )
 );
@@ -502,7 +501,7 @@ boolean flag = (
 boolean flag = (
   pg.deleteNode(
     /* name of the node to remove */
-    (char) 'A'
+    (String) "A"
   )
 );
 ```
@@ -536,10 +535,10 @@ boolean flag = (
   pg.newEdge(
 
     /* start node name */
-    (char) 'A',
+    (String) "A",
 
     /* end node name */
-    (char) 'B',
+    (String) "B",
 
     /* edge cost */
     (int) 23
@@ -555,10 +554,10 @@ boolean flag = (
   pg.newEdge(
 
     /* start node name */
-    (char) 'A',
+    (String) "A",
 
     /* end node name */
-    (char) 'B',
+    (String) "B",
 
     /* edge cost */
     (int) 23,
@@ -577,10 +576,10 @@ boolean flag = (
   pg.newEdge(
 
     /* start node name */
-    (char) 'A',
+    (String) "A",
 
     /* end node name */
-    (char) 'B',
+    (String) "B",
 
     /* edge cost */
     (int) 23,
@@ -628,10 +627,10 @@ boolean flag = (
   pg.deleteEdge(
 
     /* start node */
-    (char) 'A',
+    (String) "A",
 
     /* end node */
-    (char) 'Z'
+    (String) "B"
 
   )
 );
@@ -659,10 +658,10 @@ boolean flag = (
   pg.rotateEdge(
 
     /* start node */
-    (char) 'Z',
+    (String) "A",
 
     /* end node */
-    (char) 'C'
+    (String) "B"
 
   )
 );                                                   
@@ -675,10 +674,10 @@ boolean flag = (
   pg.rotateEdge(
 
     /* start node */
-    (char) 'Z',
+    (String) "A",
 
     /* end node */
-    (char) 'C',
+    (String) "B",
 
     /* edge direction */
     (int) SmartGraphEdgeBase.DIRECTION_FIRST
@@ -728,10 +727,10 @@ boolean flag = (
   pg.splitEdge(
 
     /* start node */
-    (char) 'Z',
+    (String) "A",
 
     /* end node */
-    (char) 'C'
+    (String) "B"
 
   )
 );   
@@ -757,10 +756,10 @@ boolean flag = (
   pg.rotateEdge(
 
     /* start node */
-    (char) 'Z',
+    (String) "A",
 
     /* end node */
-    (char) 'C',
+    (String) "B",
 
     /* is arrowed edge */
     (boolean) false
@@ -791,10 +790,10 @@ boolean flag = (
   pg.splitEdge(
 
     /* start node */
-    (char) 'Z',
+    (String) "A",
 
     /* end node */
-    (char) 'C',
+    (String) "B",
 
     /* edge cost */
     (int) 200
@@ -1413,6 +1412,17 @@ pg.disableUI();
 &nbsp;
 
 </details>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
