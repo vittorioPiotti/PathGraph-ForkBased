@@ -1198,6 +1198,30 @@ int flag = pg.uploadJSON((Scene)scene);
 >
 > Only with `PathGraphUI` class type [(see)](#prepare)
 
+
+
+
+
+
+<details>
+  
+<summary>
+  <strong> Enable UI <div id="setenableui"/> </strong>
+</summary>
+
+&nbsp;
+
+
+```java
+pg.enableUI((boolean) isEnable);
+```
+
+&nbsp;
+
+</details>
+
+
+
 <details>
   
 <summary>
@@ -1323,25 +1347,6 @@ pg.toggleUI();
 
 </details>
 
-
-
-
-<details>
-  
-<summary>
-  <strong> Set Enable UI <div id="setenableui"/> </strong>
-</summary>
-
-&nbsp;
-
-
-```java
-pg.setEnableUI((boolean) isEnable);
-```
-
-&nbsp;
-
-</details>
 
 
 
