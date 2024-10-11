@@ -1,3 +1,4 @@
+
 # (Java FX) PathGraph
 
 <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/socialpreview26.png" alt="Icona" width="100%"/>
@@ -118,46 +119,7 @@ Provided to represent path graphs through nodes, edges, and associated costs wit
 
 <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/sp.gif" alt="Icona" width="400"/>
 
-
-<details>
-  
-<summary>
-  <strong> Graph Interactions</strong>
-</summary>
-
-&nbsp;
-
-The user make **Douple Click** or **Right Click** on one of this components of the  to do:
-| Background| Node | Edge |
-| ------------ | ------------ | ------------ |
-| <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/clickBackground.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test7ui.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test8ui.gif" alt="Icona" width="100%"/>|
-| [New Node](#new-node) | [New Edge](#new-edge) | [Delete Edge](#delete-edge) |
-|  | [Delete Node](#delete-node) | [Rotate Edge](#rotate-edge) |
-|  |  | [Split Edge](#split-edge) |
-|  |  | [Set Cost](#set-cost) |
-
-> Empty callbacks to disable interactions on graph
-
-> Ability to create and use custom callbacks of the graph interactions 
-
-
-
-&nbsp;
-
-</details>
-
-
-
-
-<details>
-
-  
-<summary>
-  <strong> UI Interactions</strong>
-</summary>
-
-&nbsp;
-
+### Interface
 
 | Advanced| Edge and Nodes | Graph |
 | ------------ | ------------ | ------------ |
@@ -173,9 +135,21 @@ The user make **Douple Click** or **Right Click** on one of this components of t
 | | [Show Path](#show-path)  |  |
 
 
-&nbsp;
 
-</details>
+### Graph
+
+The user make **Douple Click** or **Right Click** on one of this components of the  to do:
+| Background| Node | Edge |
+| ------------ | ------------ | ------------ |
+| <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/clickBackground.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test7ui.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test8ui.gif" alt="Icona" width="100%"/>|
+| [New Node](#new-node) | [New Edge](#new-edge) | [Delete Edge](#delete-edge) |
+|  | [Delete Node](#delete-node) | [Rotate Edge](#rotate-edge) |
+|  |  | [Split Edge](#split-edge) |
+|  |  | [Set Cost](#set-cost) |
+
+> Empty callbacks to disable interactions on graph
+
+> Ability to create and use custom callbacks of the graph interactions 
 
 
 
@@ -1439,6 +1413,10 @@ pg.disableUI();
 &nbsp;
 
 </details>
+
+
+
+
 
 
 
