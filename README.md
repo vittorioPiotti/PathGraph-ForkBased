@@ -254,7 +254,6 @@ PathGraphUI pg = (
 ); 
 ```
 
-
 > **Graph with Defaul Settings** automatically configurated
 
 > **UI with Default Settings:** all components are enabled
@@ -263,7 +262,48 @@ PathGraphUI pg = (
 
 > **UI Settings Customizable** calling `pg.setUI()`  [(see)](#setui)
 
+&nbsp;
 
+_or_
+
+&nbsp;
+
+```java
+/* Ready-To-Use with custom configuration */
+PathGraphUI pg = (
+  new PathGraphUI(
+    (Stage) primaryStage,
+    (Scene) scene,
+
+    /* is enabled top-left menu */
+    true,
+  
+    /* is enabled bot-left menu */
+    true,
+  
+    /* is enabled bot-mid menu */
+    true,
+  
+    /* is enabled right-mid menu */
+    true,
+  
+    /* is enabled top-right menu */
+    true,
+  
+    /* is hide UI */
+    false
+
+  )
+); 
+```
+
+> **Graph with Defaul Settings** automatically configurated
+
+> **UI with Custom Settings:** choice which components to show
+
+> **Graph Settings Customizable** calling `pg.setCallbacks()` [(see)](#setcallbacks)
+
+> **UI Settings Customizable** calling `pg.setUI()`  [(see)](#setui)
 
 
 
@@ -288,6 +328,26 @@ PathGraphUI pg = (
 pg.setup();
 ```
 
+&nbsp;
+
+_or_
+
+&nbsp;
+
+```java
+pg.setup().thenRun(() -> {
+
+  /* action to perform on first load */
+  /* e.g. put here components to add onload */
+
+});
+```
+
+&nbsp;
+
+
+In both of cases:
+
 > Setup is required **to enable the use** of library
 
 > To call **only after** called `(Stage) primaryStage.show()`
@@ -305,7 +365,69 @@ pg.setup();
 
 &nbsp;
 
+
+```java
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import javafx.scene.layout.BorderPane;
+import org.pathGraph.containers.PathGraphUI;
+
+
+public class Main extends Application {
+
+
+    @Override
+    public void start(Stage primaryStage) {
+
+        /* 1. Create javafx window */
+            BorderPane root = new BorderPane();
+            root.setBackground(Background.fill(Color.web("#dee2e6")));
+            Scene scene = new Scene(root, 750, 550);
+            primaryStage.setScene(scene);
+
+        /* 2. Show primary stage */
+            primaryStage.show();
+
+        /* 3. Create PathGraph object */
+            PathGraphUI pg = new PathGraphUI(
+              primaryStage,
+              scene);
+
+        /* 4. Add PathGraph in a container */
+            root.setCenter(pg);
+
+        /* 5. Custom configurations PathGraph    */
+            pg.enableListenersGraph(true);
+            pg.enableListenersPane(true);
+            pg.setAutomaticLayout(true);
+
+        /* 6. Setup PathGraph */
+            pg.setup().thenRun(() -> {
+
+        /* 7. Make Graphs with PathGraph */
+                pg.newNode("A");
+                pg.newNode("B");
+                pg.newNode("C");
+                pg.newEdge("A", "B", 1);
+                pg.newEdge("C", "A", 2, false);
+        });
+
+        /* 8. Apply your custom logic */
+
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+
+```
+
 > Operations are available **only** after calling `pg.setup()`
+
 
 &nbsp;
 
@@ -316,7 +438,6 @@ pg.setup();
 
 
 ## 4. Usage <div id="usage"/>
-
 
 
 > [!NOTE]
@@ -648,6 +769,38 @@ boolean flag = (
 
 
 
+<details>
+<summary>
+  <strong> Set Arrow <div id="set-arrow"/> </strong>
+</summary>
+
+&nbsp;
+
+```java
+boolean flag = (
+  pg.rotateEdge(
+
+    /* start node */
+    (char) 'Z',
+
+    /* end node */
+    (char) 'C',
+
+    /* is arrowed edge */
+    (boolean) false
+
+  )
+); 
+```
+
+
+
+&nbsp;
+
+</details>
+
+
+
 
 <details>
   
@@ -687,6 +840,64 @@ boolean flag = (
 
 ### 4.3. Graph <div id="graph"/>
 
+
+
+<details>
+  
+<summary>
+  <strong>Enable Listeners Graph <div id="enablelistenersgraph"/></strong>
+</summary>
+
+&nbsp;
+
+```java
+pg.enableListenersGraph((boolean) true);
+```
+
+
+
+&nbsp;
+
+</details>
+
+<details>
+  
+<summary>
+  <strong>Enable Listeners Pane <div id="enablelistenerspane"/></strong>
+</summary>
+
+&nbsp;
+
+```java
+pg.enableListenersPane((boolean) true);
+```
+
+
+
+&nbsp;
+
+</details>
+
+
+<details>
+  
+<summary>
+  <strong>Set Automatic Layout <div id="setdynamiclayout"/></strong>
+</summary>
+
+&nbsp;
+
+```java
+pg.setAutomaticLayout();
+```
+
+> _Metodo originario di SmartGraph [(see)](https://github.com/brunomnsilva/JavaFXSmartGraph#basic-usage)_
+
+
+
+&nbsp;
+
+</details>
 
 
 
@@ -991,6 +1202,40 @@ int flag = pg.uploadJSON((Scene)scene);
 >
 > Only with `PathGraphUI` class type [(see)](#prepare)
 
+<details>
+  
+<summary>
+  <strong> Do Zoom <div id="setzoom"/> </strong>
+</summary>
+
+&nbsp;
+
+
+```java
+pg.doZoom((dooble) 2.0);
+```
+
+&nbsp;
+
+</details>
+
+
+<details>
+  
+<summary>
+  <strong> Do Drag <div id="setzoom"/> </strong>
+</summary>
+
+&nbsp;
+
+
+```java
+pg.doDrag((dooble) 20.0, (double) -10.0);
+```
+
+&nbsp;
+
+</details>
 
 <details>
   
@@ -1192,6 +1437,7 @@ pg.disableUI();
 &nbsp;
 
 </details>
+
 
 
 
