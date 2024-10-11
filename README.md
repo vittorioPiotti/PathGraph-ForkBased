@@ -1213,7 +1213,7 @@ int flag = pg.uploadJSON((Scene)scene);
 
 
 ```java
-pg.enableUI((boolean) isEnable);
+pg.enableUI((boolean) true);
 ```
 
 &nbsp;
@@ -1294,35 +1294,20 @@ pg.setUI(
 
 </details>
 
+
+
+
 <details>
   
 <summary>
-  <strong> Show UI <div id="show-ui"/> </strong>
+  <strong> Show UI <div id="hide-ui"/> </strong>
 </summary>
 
 &nbsp;
 
 
 ```java
-pg.showUI();
-```
-
-&nbsp;
-
-</details>
-
-
-<details>
-  
-<summary>
-  <strong> Hide UI <div id="hide-ui"/> </strong>
-</summary>
-
-&nbsp;
-
-
-```java
-pg.hideUI();
+pg.showUI((boolean) false);
 ```
 
 &nbsp;
