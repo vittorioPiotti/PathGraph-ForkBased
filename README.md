@@ -123,11 +123,11 @@ Provided to represent path graphs through nodes, edges, and associated costs wit
 | Advanced| Edge and Nodes | Graph |
 | ------------ | ------------ | ------------ |
 | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test5ui.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test1ui.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test4ui.gif" alt="Icona" width="100%"/>|
-| Upload | [New Node](#new-node)  |  Clear Graph |
-| Download| [Delete Node](#delete-node) |  Drag  |
-| | [Rename Node](#rename-node) |   Adjust Position  |
-| |[New Edge](#new-edge) |  Take Screenshot |
-| | [Delete Edge](#delete-edge)  |  Zoom | 
+| [Upload](#upload) | [New Node](#new-node)  |  [Clear Graph](#cleargraph) |
+| [Download](#download)| [Delete Node](#delete-node) |  [Do Drag](#dodrag)  |
+| | [Rename Node](#rename-node) |   [Do Zoom](#dozoom)  |
+| |[New Edge](#new-edge) |  [Take Screenshot](#screenshot) |
+| | [Delete Edge](#delete-edge)  | [Adjust Position](#adjustposition)  | 
 | | [Rotate Edge](#rotate-edge) |   |
 | | [Set Cost](#set-cost) |  |
 | | [Split Edge](#split-edge) |  |
@@ -1005,7 +1005,7 @@ pg.setCallbacks(
 <details>
   
 <summary>
-  <strong>  Clear Graph</strong>
+  <strong>  Clear Graph <div id="cleargraph"/> </strong>
 </summary>
 
 &nbsp;
@@ -1019,7 +1019,7 @@ pg.setCallbacks(
 <details>
   
 <summary>
-  <strong> Take Screenshot</strong>
+  <strong> Take Screenshot <div id="screenshot"/> </strong>
 </summary>
 
 &nbsp;
@@ -1086,7 +1086,7 @@ CompletableFuture<Integer> future = (
 <details>
   
 <summary>
-  <strong> Download JSON</strong>
+  <strong> Download JSON <div id="download"/></strong>
 </summary>
 
 &nbsp;
@@ -1130,7 +1130,7 @@ int flag = pg.downloadJSON((Scene) scene);
 <details>
   
 <summary>
-  <strong>  Upload JSON</strong>
+  <strong>  Upload JSON <div id="upload"/></strong>
 </summary>
 
 &nbsp;
@@ -1180,7 +1180,7 @@ int flag = pg.uploadJSON((Scene)scene);
 <details>
   
 <summary>
-  <strong> Do Zoom <div id="setzoom"/> </strong>
+  <strong> Do Zoom <div id="dozoom"/> </strong>
 </summary>
 
 &nbsp;
@@ -1198,7 +1198,7 @@ pg.doZoom((dooble) 2.0);
 <details>
   
 <summary>
-  <strong> Do Drag <div id="setzoom"/> </strong>
+  <strong> Do Drag <div id="dodrag"/> </strong>
 </summary>
 
 &nbsp;
