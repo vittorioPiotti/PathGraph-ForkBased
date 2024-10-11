@@ -29,7 +29,7 @@ Ability of find and show the shortest path, make screenshots and upload or downl
 
 &nbsp;
 
-If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated weights, which offers a user-friendly interface to represent, manage, and interact with path graphs, then Path is the right solution for you.
+If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated costs, which offers a user-friendly interface to represent, manage, and interact with path graphs, then Path is the right solution for you.
 
 &nbsp;
 
@@ -45,6 +45,7 @@ If you need a ready-to-use library for user-side representing path graphs in whi
 &nbsp;
 
 This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmart) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmart/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph to specific path graphs features in a stable user interface.
+
 
 &nbsp;
 
@@ -114,9 +115,8 @@ Provided to represent path graphs through nodes, edges, and associated costs wit
 
 ## 2. User Experience <div id="user-experience"/>
 
-
-
 <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/sp.gif" alt="Icona" width="400"/>
+
 
 <details>
   
@@ -229,10 +229,24 @@ _Working on to upload library on maven dipencencies to available the library dis
 &nbsp;
 
 
+```java
+/* Vanilla configuration */
+PathGraph pg = new PathGraph()                                           
+```
+
+> **Create your Custom UI** using PathGraph tools
+
+> **Confirue Graph Settings** calling `pg.setCallbacks()` [(see)](#setcallbacks)
+
+&nbsp;
+
+_or_
+
+&nbsp;
 
 ```java
-/* To apply default UI features */
-PathGraph pg = (
+/* Ready-To-Use configuration */
+PathGraphUI pg = (
   new PathGraphUI(
     (Stage) primaryStage,
     (Scene) scene
@@ -241,41 +255,17 @@ PathGraph pg = (
 ```
 
 
-```java
-/* To apply custom UI features */
-PathGraph pg = new PathGraph()                                           
-```
+> **Graph with Defaul Settings** automatically configurated
 
-&nbsp;
+> **UI with Default Settings:** all components are enabled
 
-> Manual callback configurations if using `PathGraph` instead of `PathGraphUI`
->
-> ```java
-> pg.setAllCallbacks(
-> 
->     /* to possibly close an open `ContextMenu` */
->     Runnable closeContextMenu,
-> 
->     /* action to perform on arrow edge event   */              
->     BiConsumer<MouseEvent, Edge<E, V>> onClickArrow,
-> 
->     /* action to perform on node event         */
->     BiConsumer<MouseEvent, Vertex<V>> onClickNode,
-> 
->     /* action to perform on click background   */
->     Consumer<MouseEvent> onClickBackground,
-> 
->     /* action to perform on scroll background  */            
->     Consumer<Double> onChangeZoom,
-> 
->     /* action to perform on drag background    */        
->     Runnable doAdjustPosition
-> 
-> );
-> ```
-> > It can be done in any time and in any case
->
-> > Configure empty callbacks to disable graph interactions
+> **Graph Settings Customizable** calling `pg.setCallbacks()` [(see)](#setcallbacks)
+
+> **UI Settings Customizable** calling `pg.setUI()`  [(see)](#setui)
+
+
+
+
 
 
 &nbsp;
@@ -364,10 +354,8 @@ pg.setup();
 ```java
 boolean flag = (
   pg.newNode(
-
     /* node name to create */
     (char) 'A'
-
   )
 );
 ```
@@ -416,10 +404,8 @@ boolean flag = (
 ```java
 boolean flag = (
   pg.deleteNode(
-
     /* name of the node to remove */
     (char) 'A'
-
   )
 );
 ```
@@ -545,7 +531,6 @@ boolean flag = (
   pg.deleteEdge(
 
     /* start node */
-
     (char) 'A',
 
     /* end node */
@@ -701,6 +686,48 @@ boolean flag = (
 
 
 ### 4.3. Graph <div id="graph"/>
+
+
+
+
+<details>
+  
+<summary>
+  <strong>Set Callbacks <div id="setcallbacks"/></strong>
+</summary>
+
+&nbsp;
+
+```java
+pg.setCallbacks(
+
+   /* to possibly close an open `ContextMenu` */
+   Runnable closeContextMenu,
+
+   /* action to perform on arrow edge event   */              
+   BiConsumer<MouseEvent, Edge<E, V>> onClickArrow,
+
+   /* action to perform on node event         */
+   BiConsumer<MouseEvent, Vertex<V>> onClickNode,
+
+   /* action to perform on click background   */
+   Consumer<MouseEvent> onClickBackground,
+
+   /* action to perform on scroll background  */            
+   Consumer<Double> onChangeZoom,
+
+   /* action to perform on drag background    */        
+   Runnable doAdjustPosition
+
+);
+```
+
+
+
+&nbsp;
+
+</details>
+
 
 
 <details>
@@ -961,23 +988,14 @@ int flag = pg.uploadJSON((Scene)scene);
 
 
 > [!NOTE]
-> Features only avaible on `PathGraphUI` class type [(see)](#prepare)
-> 
-> ```java
-> PathGraphUI pg = (
->   new PathGraphUI(
->     primaryStage,
->     scene
->   )
-> );
-> ```
 >
-> > Not is supported using `PathGraph` class type
+> Only with `PathGraphUI` class type [(see)](#prepare)
+
 
 <details>
   
 <summary>
-  <strong> Set UI <div id="set-ui"/> </strong>
+  <strong> Set UI <div id="setui"/> </strong>
 </summary>
 
 &nbsp;
@@ -1138,7 +1156,7 @@ pg.disableUI();
 <details>
   
 <summary>
-  <strong> SmartGrah</strong>
+  <strong> SmartGraph</strong>
 </summary>
 
 &nbsp;
@@ -1174,7 +1192,6 @@ pg.disableUI();
 &nbsp;
 
 </details>
-
 
 
 
