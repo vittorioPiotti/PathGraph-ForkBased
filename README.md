@@ -1010,10 +1010,31 @@ pg.setCallbacks(
 
 &nbsp;
 
+```java
+pg.clearGraph();
+```
+
 
 &nbsp;
    
 </details>
+
+<details>
+  
+<summary>
+  <strong>  Adjust Position <div id="adjustPosition"/> </strong>
+</summary>
+
+&nbsp;
+
+```java
+pg.adjustPosition((double) 0.7);
+```
+
+&nbsp;
+   
+</details>
+
 
 
 <details>
