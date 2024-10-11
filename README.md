@@ -1329,14 +1329,14 @@ pg.toggleUI();
 <details>
   
 <summary>
-  <strong> Enable UI <div id="toggle-ui"/> </strong>
+  <strong> Set Enable UI <div id="setenableui"/> </strong>
 </summary>
 
 &nbsp;
 
 
 ```java
-pg.enableUI();
+pg.setEnableUI((boolean) isEnable);
 ```
 
 &nbsp;
@@ -1345,22 +1345,7 @@ pg.enableUI();
 
 
 
-<details>
-  
-<summary>
-  <strong> Disable UI <div id="toggle-ui"/> </strong>
-</summary>
 
-&nbsp;
-
-
-```java
-pg.disableUI();
-```
-
-&nbsp;
-
-</details>
 
 
 
