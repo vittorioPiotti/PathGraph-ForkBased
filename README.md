@@ -15,7 +15,9 @@ Ability of find and show the shortest path, make screenshots and upload or downl
  2. [User Experience](#user-experience)
  3. [Get Started](#get-started)
  4. [Usage](#usage)
- 5. [Licenses](#licenses)
+ 5. [DTO · Data Transfer Objects](#data-transfer-object)
+ 6. [JSON Data Management](#json-data-management)
+ 7. [Licenses](#licenses)
 
 
 ## 1. About <div id="about"/>
@@ -65,7 +67,7 @@ This library is a fork based on the source code of the [SmartGraph](https://gith
 
 Provided to represent path graphs through nodes, edges, and associated costs with the following logic:
 
-* Nodes can be only Stringacters with uppercase alphabet letters to maxium 26 nodes
+* Nodes can be only characters with uppercase alphabet letters to maxium 26 nodes
 * Not provided over limits of two edges with same direction between two same nodes
 * Not provided loops creation
 * Edge cost can be only `int` variable type to rappresent integer numbers
@@ -382,11 +384,11 @@ public class Main extends Application {
             pg.setup().thenRun(() -> {
 
         /* 7. Make Graphs with PathGraph */
-                pg.newNode("A");
-                pg.newNode("B");
-                pg.newNode("C");
-                pg.newEdge("A", "B", 1);
-                pg.newEdge("C", "A", 2, false);
+                pg.newNode('A');
+                pg.newNode('B');
+                pg.newNode('C');
+                pg.newEdge('A', 'B', 1);
+                pg.newEdge('C', 'A', 2, false);
 
             });
 
@@ -394,7 +396,7 @@ public class Main extends Application {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(char[] args) {
         launch(args);
     }
 }
@@ -451,7 +453,7 @@ public class Main extends Application {
 boolean flag = (
   pg.newNode(
     /* node name to create */
-    (String) "A"
+    (char) 'A'
   )
 );
 ```
@@ -474,10 +476,10 @@ boolean flag = (
   pg.renameNode(
 
     /* last node name */
-    (String) "A",
+    (char) 'A',
 
     /* new node name */
-    (String) "B"
+    (char) 'B'
 
   )
 );
@@ -501,7 +503,7 @@ boolean flag = (
 boolean flag = (
   pg.deleteNode(
     /* name of the node to remove */
-    (String) "A"
+    (char) 'A'
   )
 );
 ```
@@ -535,10 +537,10 @@ boolean flag = (
   pg.newEdge(
 
     /* start node name */
-    (String) "A",
+    (char) 'A',
 
     /* end node name */
-    (String) "B",
+    (char) 'B',
 
     /* edge cost */
     (int) 23
@@ -554,10 +556,10 @@ boolean flag = (
   pg.newEdge(
 
     /* start node name */
-    (String) "A",
+    (char) 'A',
 
     /* end node name */
-    (String) "B",
+    (char) 'B',
 
     /* edge cost */
     (int) 23,
@@ -576,10 +578,10 @@ boolean flag = (
   pg.newEdge(
 
     /* start node name */
-    (String) "A",
+    (char) 'A',
 
     /* end node name */
-    (String) "B",
+    (char) 'B',
 
     /* edge cost */
     (int) 23,
@@ -627,10 +629,10 @@ boolean flag = (
   pg.deleteEdge(
 
     /* start node */
-    (String) "A",
+    (char) 'A',
 
     /* end node */
-    (String) "B"
+    (char) 'B'
 
   )
 );
@@ -658,10 +660,10 @@ boolean flag = (
   pg.rotateEdge(
 
     /* start node */
-    (String) "A",
+    (char) 'A',
 
     /* end node */
-    (String) "B"
+    (char) 'B'
 
   )
 );                                                   
@@ -674,10 +676,10 @@ boolean flag = (
   pg.rotateEdge(
 
     /* start node */
-    (String) "A",
+    (char) 'A',
 
     /* end node */
-    (String) "B",
+    (char) 'B',
 
     /* edge direction */
     (int) SmartGraphEdgeBase.DIRECTION_FIRST
@@ -727,10 +729,10 @@ boolean flag = (
   pg.splitEdge(
 
     /* start node */
-    (String) "A",
+    (char) 'A',
 
     /* end node */
-    (String) "B"
+    (char) 'B'
 
   )
 );   
@@ -756,10 +758,10 @@ boolean flag = (
   pg.rotateEdge(
 
     /* start node */
-    (String) "A",
+    (char) 'A',
 
     /* end node */
-    (String) "B",
+    (char) 'B',
 
     /* is arrowed edge */
     (boolean) false
@@ -790,10 +792,10 @@ boolean flag = (
   pg.splitEdge(
 
     /* start node */
-    (String) "A",
+    (char) 'A',
 
     /* end node */
-    (String) "B",
+    (char) 'B',
 
     /* edge cost */
     (int) 200
@@ -866,7 +868,7 @@ pg.enableListenersPane((boolean) true);
 ```java
 pg.setGraph(
   /* meta data of the graph to upload */
-  (MetaGraph) mt
+  (GraphDTO) mt
 );
 ```
 
@@ -874,7 +876,7 @@ pg.setGraph(
 pg.setGraph(
 
   /* meta data of the graph to upload */
-  (MetaGraph) mt,
+  (GraphDTO) mt,
 
   /* is animated upload of new graph */
   (boolean) true
@@ -952,75 +954,20 @@ pg.setCallbacks(
 
 
 <details>
-
-<summary>
-  <strong>  Get Nodes</strong>
-</summary>
-
-&nbsp;
-
-
-&nbsp;
-   
-</details>
-
-
-<details>
-
-<summary>
-  <strong>  Get Edges</strong>
-</summary>
-
-&nbsp;
-
-
-&nbsp;
-   
-</details>
-
-<details>
-
-<summary>
-  <strong>  Get Connections</strong>
-</summary>
-
-&nbsp;
-
-
-&nbsp;
-   
-</details>
-
-
-<details>
   
 <summary>
-  <strong>  Get Graph</strong>
+  <strong>  Get Graph <div id="getgraph"/></strong>
 </summary>
 
 &nbsp;
 
+```java
+GraphDTO gto = pg.getGraph();
+```
 
 &nbsp;
    
 </details>
-
-
-
-<details>
-
-<summary>
-  <strong>  Get Path</strong>
-</summary>
-
-&nbsp;
-
-
-&nbsp;
-   
-</details>
-
-
 
 <details>
   
@@ -1030,6 +977,9 @@ pg.setCallbacks(
 
 &nbsp;
 
+```java
+pg.showPath((List<NodeDTO>) lpn);
+```
 
 &nbsp;
    
@@ -1147,15 +1097,53 @@ CompletableFuture<Integer> future = (
 
 &nbsp;
 
+
 ```java
-/* floating file chooser */
-int flag = pg.downloadJSON();             
+/* fixed or floating file chooser */
+int flag = pg.downloadJSON((Window) window); 
 ```
 
 ```java
-/* fixed file chooser */
-int flag = pg.downloadJSON((Scene) scene); 
+/* whithout file chooser: file alredy chosen */
+int flag = pg.downloadJSON((File) file);             
 ```
+
+```java
+/* using data transfer objects */
+/* fixed or floating file chooser */
+int flag = pg.downloadJSON(
+
+  /* file chooser dialog owner window */
+  (Window) window,
+
+  /* nodes data transfer structor */
+  (List<NodeDTO>) pg.getGraph().nodes,
+
+  /* edges data transfer structor */
+  (List<EdgeDTO>) pg.getGraph().edges
+
+);             
+```
+
+
+```java
+/* using data transfer objects */
+/* whithout file chooser: file alredy chosen */
+int flag = pg.downloadJSON(
+
+  /* file in which save json graph */
+  new File("path/to/file.json"),
+
+  /* nodes data transfer structor */
+  (List<NodeDTO>) pg.getGraph().nodes,
+
+  /* edges data transfer structor */
+  (List<EdgeDTO>) pg.getGraph().edges,
+
+);             
+```
+
+
 
 &nbsp;
 
@@ -1197,7 +1185,7 @@ int flag = pg.downloadJSON((Scene) scene);
 
 ```java
 /* fixed or floating file chooser*/
-int flag = pg.uploadJSON((Scene)scene);  
+int flag = pg.uploadJSON((Window) window);  
 ```
 
 ```java
@@ -1228,20 +1216,18 @@ int flag = pg.uploadJSON((File) file);
 
 > Ability to upload json also without atomic method:
 >
-> ```java
-> /* choose json file */
-> File file = new File("path/of/file.json");       
+> ```java       
 >
 > /* parse json file */
-> MetaGraph mt = (
+> GraphDTO mt = (
 >   pg.parseJson(
->   (File) file
+>   new File("path/to/file.json")
 >   )
 > );
 > 
 > /* set new graph */
 > pg.setGraph(
->   (MetaGraph) mt,
+>   (GraphDTO) mt,
 >   (boolean) true
 > );
 > ```
@@ -1265,7 +1251,7 @@ int flag = pg.uploadJSON((File) file);
 &nbsp;
 
 ```java
-MetaGraph mt = (
+GraphDTO mt = (
   pg.parseJson(
     (File) file
   )
@@ -1422,11 +1408,148 @@ pg.toggleUI();
 
 
 
+## 5. DTO · Data Transfer Objects <div id="data-transfer-object"/>
+ 
+ 
+Represent the components of the graph providing a simple and serializable structure that allows for:
+
+ * Converting graph data into JSON format
+ * Reconstructing graph data from JSON
+ * Support structure for graph operations
+
+
+<details>
+  
+<summary>
+  <strong> Node</strong>
+</summary>
+
+&nbsp;
+
+```java
+public class NodeDTO {
+
+  public char label;
+
+  public NodeDTO(
+    char label
+  ) {
+    /* construction */
+  }
+
+}
+```
+
+&nbsp;
+
+</details>
+
+<details>
+  
+<summary>
+  <strong> Edge</strong>
+</summary>
+
+&nbsp;
+
+```java
+public class EdgeDTO {
+
+  public char from;
+  public char to;
+  public int cost;
+  public boolean isArrowed;
+
+  public EdgeDTO(
+    char from,
+    char to,
+    int cost,
+    boolean isArrowed
+  ) {
+    /* construction */
+  }
+
+  public EdgeDTO(
+    char from,
+    char to,
+    int cost,
+    int dir
+  ) {
+    /* construction */
+  }
+
+}
+```
+
+&nbsp;
+
+</details>
+
+<details>
+  
+<summary>
+  <strong> Connection</strong>
+</summary>
+
+&nbsp;
+
+```java
+public class ConnectionDTO {
+
+  public char label;
+  public int cost;
+
+  public ConnectionDTO(
+    char label,
+    int cost
+  ) {
+    /* construction */
+  }
+
+}
+```
+
+&nbsp;
+
+</details>
+
+<details>
+  
+<summary>
+  <strong> Graph</strong>
+</summary>
+
+&nbsp;
+
+```java
+public class GraphDTO {
+
+  public List<NodeDTO> nodes;
+  public List<EdgeDTO> edges;
+
+  /* it derivate from intersection between nodes and edges during construction */
+  public Map<
+    NodeDTO,
+    List<ConnectionDTO>
+  > connectedNodes = new HashMap<>();
+
+  public GraphDTO(List<NodeDTO> nodes, List<EdgeDTO> edges) {
+    /* construction */
+  }
+
+}
+```
+
+&nbsp;
+
+</details>
 
 
 
 
-## 5. Licenses <div id="licenses"/>
+## 6. JSON Data Management <div id="json-data-management"/>
+
+## 7. Licenses <div id="licenses"/>
 
 
 
@@ -1495,6 +1618,22 @@ pg.toggleUI();
 &nbsp;
 
 </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
