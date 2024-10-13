@@ -1709,7 +1709,8 @@ List<ConnectionDTO> lcdto = (
 ## 7. Licenses <div id="licenses"/>
 
 
-> SVG icons from **Bootstrap**
+> [!NOTE]
+>  SVG icons from **Bootstrap**
 
 
 
