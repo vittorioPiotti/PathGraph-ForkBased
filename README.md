@@ -12,7 +12,7 @@ Ability of find and show the shortest path, make screenshots and upload or downl
 ## Main Index
 
  1. [About](#about)
- 2. [User Experience](#user-experience)
+ 2. [Features](#features)
  3. [Get Started](#get-started)
  4. [Usage](#usage)
  5. [DTO · Data Transfer Objects](#data-transfer-object)
@@ -117,7 +117,7 @@ Provided to represent path graphs through nodes, edges, and associated costs wit
 
 
 
-## 2. User Experience <div id="user-experience"/>
+## 2. Features <div id="features"/>
 
 <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/sp.gif" alt="Icona" width="400"/>
 
