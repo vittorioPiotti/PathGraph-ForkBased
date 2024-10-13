@@ -18,6 +18,7 @@ Ability of find and show the shortest path, make screenshots and upload or downl
  5. [DTO · Data Transfer Objects](#data-transfer-object)
  6. [JSON · Data Management](#json-data-management)
  7. [Licenses](#licenses)
+ 8. [Fork-Based On SmartGraph](#fork-based-on-smartgraph)
 
 
 ## 1. About <div id="about"/>
@@ -1744,7 +1745,7 @@ List<ConnectionDTO> lcdto = (
 ---
 
 
-## Fork-Based On SmartGraph
+## Fork-Based On SmartGraph <div id="fork-based-on-smartgraph"/>
 
 [(See)](https://github.com/brunomnsilva/JavaFXSmartGraph)
 
