@@ -16,7 +16,7 @@ Ability of find and show the shortest path, make screenshots and upload or downl
  3. [Get Started](#get-started)
  4. [Usage](#usage)
  5. [DTO · Data Transfer Objects](#data-transfer-object)
- 6. [JSON Data Management](#json-data-management)
+ 6. [JSON · Data Management](#json-data-management)
  7. [Licenses](#licenses)
 
 
@@ -1209,21 +1209,18 @@ int flag = pg.uploadJSON((File) file);
 
 &nbsp;
 
-> Ability to upload json also without atomic method:
+> Ability to upload json also without standard methods using DTO [(see)](#data-transfer-object)
 >
 > ```java       
->
-> /* parse json file */
-> GraphDTO mt = (
->   pg.parseJson(
->   new File("path/to/file.json")
->   )
-> );
-> 
 > /* set new graph */
 > pg.setGraph(
->   (GraphDTO) mt,
+> 
+>   /* DTO created from json content or json file */
+>   (GraphDTO) dto,
+> 
+>    /* is animated grah setting */
 >   (boolean) true
+> 
 > );
 > ```
 
@@ -1237,25 +1234,6 @@ int flag = pg.uploadJSON((File) file);
 
 
 
-<details>
-  
-<summary>
-  <strong>  Parse JSON <div id="parseJSON"/> </strong>
-</summary>
-
-&nbsp;
-
-```java
-GraphDTO mt = (
-  pg.parseJson(
-    (File) file
-  )
-);
-```
-
-&nbsp;
-   
-</details>
 
 
 ### 4.4. UI <div id="ui"/>
@@ -1413,126 +1391,30 @@ Represent the components of the graph providing a simple and serializable struct
  * Support structure for graph operations
 
 
+
 <details>
   
 <summary>
-  <strong> Node</strong>
+  <strong>Node</strong>
 </summary>
 
 &nbsp;
 
+**Constructor**
+
 ```java
-public class NodeDTO {
-
-  public char label;
-
-  public NodeDTO(
-    char label
-  ) {
-    /* construction */
-  }
-
-}
+NodeDTO ndto = (
+  new NodeDTO(
+    /* node name */
+    (char) 'A'
+  )
+);
 ```
 
-&nbsp;
-
-</details>
-
-<details>
-  
-<summary>
-  <strong> Edge</strong>
-</summary>
-
-&nbsp;
+**Method**
 
 ```java
-public class EdgeDTO {
-
-  public char from;
-  public char to;
-  public int cost;
-  public boolean isArrowed;
-
-  public EdgeDTO(
-    char from,
-    char to,
-    int cost,
-    boolean isArrowed
-  ) {
-    /* construction */
-  }
-
-  public EdgeDTO(
-    char from,
-    char to,
-    int cost,
-    int dir
-  ) {
-    /* construction */
-  }
-
-}
-```
-
-&nbsp;
-
-</details>
-
-<details>
-  
-<summary>
-  <strong> Connection</strong>
-</summary>
-
-&nbsp;
-
-```java
-public class ConnectionDTO {
-
-  public char label;
-  public int cost;
-
-  public ConnectionDTO(
-    char label,
-    int cost
-  ) {
-    /* construction */
-  }
-
-}
-```
-
-&nbsp;
-
-</details>
-
-<details>
-  
-<summary>
-  <strong> Graph</strong>
-</summary>
-
-&nbsp;
-
-```java
-public class GraphDTO {
-
-  public List<NodeDTO> nodes;
-  public List<EdgeDTO> edges;
-
-  /* it derivate from intersection between nodes and edges during construction */
-  public Map<
-    NodeDTO,
-    List<ConnectionDTO>
-  > connectedNodes = new HashMap<>();
-
-  public GraphDTO(List<NodeDTO> nodes, List<EdgeDTO> edges) {
-    /* construction */
-  }
-
-}
+char label = ndto.getLabel();
 ```
 
 &nbsp;
@@ -1541,8 +1423,272 @@ public class GraphDTO {
 
 
 
+<details>
+  
+<summary>
+  <strong>Edge</strong>
+</summary>
 
-## 6. JSON Data Management <div id="json-data-management"/>
+&nbsp;
+
+
+
+**Constructors**
+
+
+
+```java
+EdgeDTO edto = (
+  new EdgeDTO(
+
+    /* start node */
+    (char) 'A',
+
+    /* end node */
+    (char) 'B',
+
+    /* edge cost */
+    (int) 3,
+
+    /* is arrowed edge */
+    (boolean) false
+
+  )
+);
+```
+
+
+
+
+```java
+EdgeDTO edto = (
+  new EdgeDTO(
+
+    /* start node */
+    (char) 'A',
+
+    /* end node */
+    (char) 'B',
+
+    /* edge cost */
+    (int) 3,
+
+    /* edge direction */
+    (int) SmartGraphEdgeBase.BIDIRECTIONAL
+
+  )
+);
+```
+
+
+**Methods**
+
+
+```java
+char from = edto.getFrom();
+```
+
+```java
+char to = edto.getTo();
+```
+
+```java
+int cost = edto.getCost();
+```
+
+```java
+boolean isArrowed = edto.isArrowed();
+```
+
+
+&nbsp;
+
+</details>
+
+
+
+<details>
+  
+<summary>
+  <strong>Connection</strong>
+</summary>
+
+&nbsp;
+
+**Constructor**
+
+
+```java
+ConnectionDTO ndto = (
+  new ConnectionDTO(
+
+    /* connected node */
+    (char) 'A',
+
+    /* edge cost */
+    (int) 3,
+
+  )
+);
+```
+
+
+
+**Methods**
+
+
+```java
+char label = edto.getLabel();
+```
+
+```java
+int cost = edto.getCost();
+```
+
+
+&nbsp;
+
+</details>
+
+
+
+
+
+
+
+
+<details>
+  
+<summary>
+  <strong>Graph</strong>
+</summary>
+
+&nbsp;
+
+
+**Constructors**
+
+```java
+GraphDTO gdto = (
+  new GraphDTO(
+    /* file with json */
+    (File) new File("path/to/file.json")
+  )
+);
+```
+
+
+```java
+GraphDTO gdto = (
+  new GraphDTO(
+    /* String with json content */
+    (String) jsonContent
+  )
+);
+```
+
+
+```java
+GraphDTO gdto = (
+  new GraphDTO(
+
+    /* nodes DTO */
+    List<NodeDTO> nodes, 
+
+    /* edges DTO */
+    List<EdgeDTO> edges
+
+  )
+);
+```
+
+**Methods**
+
+
+```java
+List<NodeDTO> path = (
+  gdto.findPath(
+    
+    /* start node */
+    (char) 'A',
+
+    /* end node */
+    (char) 'B',
+
+  )
+);
+```
+
+```java
+String json = gdto.getJson();
+```
+
+```java
+List<NodesDTO> lndto = (
+  gdto.getNodes())
+);
+```
+
+```java
+List<EdgeDTO> ledto = (
+  gdto.getEdges()
+);
+```
+
+
+```java
+List<ConnectionDTO> lcdto = (
+  gdto.getConnections()
+);
+```
+
+
+
+
+
+
+
+
+&nbsp;
+
+</details>
+
+
+
+
+
+
+
+
+
+## 6. JSON · Data Management <div id="json-data-management"/>
+
+
+```json
+{
+  "nodes": ["A", "B","C"],
+  "edges": [
+    {
+      "from": "A",
+      "to": "B",
+      "cost": 1,
+      "isArrowed": true
+    },
+    {
+      "from": "B",
+      "to": "A",
+      "cost": 10,
+      "isArrowed": true
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "cost": 2,
+      "isArrowed": false
+    },
+  ]
+}
+```
 
 ## 7. Licenses <div id="licenses"/>
 
@@ -1554,13 +1700,12 @@ public class GraphDTO {
 
 
 
-<details>
-  
-<summary>
-  <strong> PathGraph</strong>
-</summary>
 
-&nbsp;
+
+
+---
+
+### PathGraph
 
 **Copyright** 2024 Vittorio Piotti [(GitHub page)](https://github.com/vittorioPiotti) [(Personal page)](https://vittoriopiotti.altervista.org/) 
 
@@ -1568,20 +1713,13 @@ public class GraphDTO {
 
 **License** [GPL-3.0](https://github.com/vittorioPiotti/JavaFXPathGraph/blob/master/LICENSE.txt)
 
-&nbsp;
-
-</details>
 
 
 
-<details>
-  
-<summary>
-  <strong> SmartGraph</strong>
-</summary>
 
-&nbsp;
+---
 
+### SmartGraph
 
 **Copyright** 2019 - 2024 Bruno Silva [(GitHub page)](https://github.com/brunomnsilva) [(Personal page)](https://www.brunomnsilva.com/) 
 
@@ -1590,18 +1728,10 @@ public class GraphDTO {
 **License** [MIT](https://github.com/brunomnsilva/JavaFXSmartGraph/blob/master/LICENSE.txt)
 
 
-&nbsp;
 
-</details>
+---
 
-
-<details>
-  
-<summary>
-  <strong> Bootstrap</strong>
-</summary>
-
-&nbsp;
+### Bootstrap
 
 **Copyright** 2011-2018 The Bootstrap Authors 
 
@@ -1610,11 +1740,11 @@ public class GraphDTO {
 **License** [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
 
-&nbsp;
 
-</details>
+---
 
 
+### Fork-Based On SmartGraph
 
 
 
