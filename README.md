@@ -11,8 +11,6 @@ Ability of find and show the shortest path, make screenshots and upload or downl
 
 
 
-> [!IMPORTANT]
-> [Javadoc]()
 
 
 ## Main Index
@@ -426,6 +424,10 @@ public class Main extends Application {
 
 > [!NOTE]
 > Operations are available **only** after calling `pg.setup()` [(see)](#setup)
+
+
+> [!IMPORTANT]
+> Read the **Javadoc** for more technicals details: [(see)]()
 
 
 ### Usage Index
