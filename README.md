@@ -10,6 +10,9 @@ Provided to user-friendly interface in a stable user-experience in which manage 
 Ability of find and show the shortest path, make screenshots and upload or download json of the graphs.
 
 
+> [!IMPORTANT]
+> Read the **Javadoc** for more technicals details: [(see)]()
+
 
 
 
@@ -422,12 +425,16 @@ public class Main extends Application {
 
 ## 4. Usage <div id="usage"/>
 
+
+> [!IMPORTANT]
+> Read the **Javadoc** for more technicals details: [(see)]()
+
+
+
 > [!NOTE]
 > Operations are available **only** after calling `pg.setup()` [(see)](#setup)
 
 
-> [!IMPORTANT]
-> Read the **Javadoc** for more technicals details: [(see)]()
 
 
 ### Usage Index
