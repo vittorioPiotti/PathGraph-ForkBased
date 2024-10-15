@@ -1,5 +1,6 @@
 # (Java FX) PathGraph
 
+
 <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/socialpreview26.png" alt="Icona" width="100%"/>
 
 
@@ -178,8 +179,9 @@ The user make **Douple Click** or **Right Click** on one of this components of t
 
 &nbsp;
 
- * Java from: `v.21` [(link)](https://www.oracle.com/java/technologies/downloads/#java21)
- * JavaFX from: `v.22` [(link)](https://gluonhq.com/products/javafx/)
+**Java** from: `v.21` _or higher_  [(link)](https://www.oracle.com/java/technologies/downloads/#java21)
+
+**JavaFX** from: `v.22` _or higher_  [(link)](https://gluonhq.com/products/javafx/)
 
 &nbsp;
 
@@ -195,7 +197,96 @@ The user make **Douple Click** or **Right Click** on one of this components of t
 
 &nbsp;
 
-_Working on to upload library on maven dipencencies to available the library distribution_
+**Import PathGraph**
+
+> It's recommended to import the [PathGraph.jar](https://github.com/vittorioPiotti/PathGraph-JavaFX/releases/tag/1.0.0) into your IntelliJ project by adding it to your module dependencies.
+
+> Working on to upload library on maven dipencencies to available the library distribution
+
+**Pom Configuration**
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId> <!-- Replace with your group ID -->
+    <artifactId>your-artifact-id</artifactId> <!-- Replace with your artifact ID -->
+    <version>1.0-SNAPSHOT</version>
+    <name>Your Project Name</name> <!-- Replace with your project name -->
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>5.10.2</junit.version>
+        <javafx.version>22</javafx.version> <!-- Define JavaFX version here -->
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version> <!-- Use property for version -->
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>${javafx.version}</version> <!-- Use property for version -->
+        </dependency>
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>11.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Updated version -->
+                <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <executions>
+                    <execution>
+                        <id>default-cli</id>
+                        <configuration>
+                            <mainClass>com.example.yourpath.YourMainClass</mainClass> <!-- Replace with your main class path -->
+                            <launcher>app</launcher>
+                            <jlinkZipName>app</jlinkZipName>
+                            <jlinkImageName>app</jlinkImageName>
+                            <noManPages>true</noManPages>
+                            <stripDebug>true</stripDebug>
+                            <noHeaderFiles>true</noHeaderFiles>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```
 
 
 &nbsp;
@@ -354,60 +445,62 @@ In both of cases:
 ```java
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.layout.*;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.scene.layout.BorderPane;
-import org.pathGraph.containers.PathGraphUI;
+import java.io.IOException;
 
+/* PathGraph import */
+import com.vittoriopiotti.pathgraph.containers.PathGraphUI;
 
 public class Main extends Application {
 
-
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws IOException {
 
         /* 1. Create javafx window */
-            BorderPane root = new BorderPane();
-            root.setBackground(Background.fill(Color.web("#dee2e6")));
-            Scene scene = new Scene(root, 750, 550);
-            primaryStage.setScene(scene);
+        BorderPane root = new BorderPane();
+        root.setBackground(Background.fill(Color.web("#dee2e6")));
+        Scene scene = new Scene(root, 750, 550);
+        primaryStage.setScene(scene);
 
         /* 2. Show primary stage */
-            primaryStage.show();
+        primaryStage.show();
 
         /* 3. Create PathGraph object */
-            PathGraphUI pg = new PathGraphUI(
-              primaryStage,
-              scene);
+        PathGraphUI pg = new PathGraphUI(
+                primaryStage,
+                scene
+        );
 
         /* 4. Add PathGraph in a container */
-            root.setCenter(pg);
+        root.setCenter(pg);
 
         /* 5. Custom configurations PathGraph    */
-            pg.enableListenersGraph(true);
-            pg.enableListenersPane(true);
-            pg.setAutomaticLayout(true);
+        pg.enableListenersGraph(true);
+        pg.enableListenersPane(true);
+        pg.setAutomaticLayout(true);
 
         /* 6. Setup PathGraph */
-            pg.setup().thenRun(() -> {
+        pg.setup().thenRun(() -> {
 
-        /* 7. Make Graphs with PathGraph */
-                pg.newNode('A');
-                pg.newNode('B');
-                pg.newNode('C');
-                pg.newEdge('A', 'B', 1);
-                pg.newEdge('C', 'A', 2, false);
+            /* 7. Make Graphs with PathGraph */
+            pg.newNode('A');
+            pg.newNode('B');
+            pg.newNode('C');
+            pg.newEdge('A', 'B', 1);
+            pg.newEdge('C', 'A', 2, false);
 
-            });
-
-        /* 8. Apply your custom logic */
+        });
 
     }
 
-    public static void main(char[] args) {
-        launch(args);
+
+    public static void main(String[] args) {
+        launch();
     }
+    
 }
 
 ```
@@ -418,6 +511,31 @@ public class Main extends Application {
 &nbsp;
 
 </details>
+
+
+
+
+
+
+<details>
+  
+<summary>
+  <strong> 6. Configuration and Styling</strong>
+</summary>
+
+&nbsp;
+
+
+In future versions will be optimized the management of configurations and styles similar to the original project of the fork [(see)](https://github.com/brunomnsilva/JavaFXSmartGraph#configuration-and-styling).
+
+Currently, the styles and configurations are preset and cannot be modified.
+
+
+
+&nbsp;
+
+</details>
+
 
 
 
@@ -1399,7 +1517,11 @@ pg.toggleUI();
 
 ## 5. DTO · Data Transfer Objects <div id="data-transfer-object"/>
  
- 
+ > [!IMPORTANT]
+> Read the **Javadoc** for more technicals details: [(see)]()
+
+
+
 Represent the components of the graph providing a simple and serializable structure that allows for:
 
  * Converting graph data into JSON format
@@ -1724,7 +1846,7 @@ List<ConnectionDTO> lcdto = (
 
 **Copyright** 2024 Vittorio Piotti [(GitHub page)](https://github.com/vittorioPiotti) [(Personal page)](https://vittoriopiotti.altervista.org/) 
 
-**Version** Not released
+**Version** [v1.0.0](https://github.com/vittorioPiotti/PathGraph-JavaFX/releases/tag/1.0.0)
 
 **License** [GPL-3.0](https://github.com/vittorioPiotti/JavaFXPathGraph/blob/master/LICENSE.txt)
 
@@ -1746,13 +1868,13 @@ List<ConnectionDTO> lcdto = (
 
 ---
 
-### Bootstrap
+### Bootstrap Icons
 
 **Copyright** 2011-2018 The Bootstrap Authors 
 
-**Version** v4.0.0
+**Version** [v1.11.0](https://blog.getbootstrap.com/2023/09/12/bootstrap-icons-1-11-0/)
 
-**License** [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
+**License** [MIT](https://github.com/twbs/icons/blob/main/LICENSE)
 
 
 
@@ -1765,6 +1887,41 @@ List<ConnectionDTO> lcdto = (
 This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmart) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmart/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph to specific path graphs features in a stable user interface.
 
 [(See SmartGraph)](https://github.com/brunomnsilva/JavaFXSmartGraph)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
