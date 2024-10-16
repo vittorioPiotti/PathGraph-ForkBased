@@ -1,10 +1,23 @@
 # (Java FX) PathGraph
 
 
+
+> [!CAUTION]
+> Bugs in custom callbacks settings in `PathGraph` but `PathGraphUI` work:
+>  * **Cannot** to know during on click callback on element the selected edge or node
+>  * **Cannot** to use the selcted edge or node to make custom callbacks  
+> 
+> Bugs will be fixed with new callbacks managing system in next update
+> 
+> _Working on 1.0.3_
+
+
 <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/socialpreview26.png" alt="Icona" width="100%"/>
 
 
 ---
+
+
   
 PathGraph fork based on [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) is an adapted library to work with path graphs that uses nodes, edges and associated costs.
 Provided to user-friendly interface in a stable user-experience in which manage dynamically the path graphs.
