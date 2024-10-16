@@ -12,8 +12,19 @@ Ability of find and show the shortest path, make screenshots and upload or downl
 
 
 > [!IMPORTANT]
-> Read the **Javadoc** for more technicals details: [(see)]()
+> Read the **Javadoc** for more technicals details: [(see)](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/spring-core)
 
+
+> [!NOTE]
+> Library available on Maven Central [(see)](https://central.sonatype.com/artifact/io.github.vittoriopiotti/PathGraph-JavaFX)
+> ```xml
+> <!-- Import using Maven Central -->
+> <dependency>
+>   <groupId>io.github.vittoriopiotti</groupId>
+>   <artifactId>PathGraph-JavaFX</artifactId>
+>   <version>1.0.2</version>
+> </dependency>
+> ```
 
 
 
@@ -199,11 +210,63 @@ The user make **Douple Click** or **Right Click** on one of this components of t
 
 **Import PathGraph**
 
-> It's recommended to import the [PathGraph.jar](https://github.com/vittorioPiotti/PathGraph-JavaFX/releases/tag/1.0.0) into your IntelliJ project by adding it to your module dependencies.
+&nbsp;
 
-> Working on to upload library on maven dipencencies to available the library distribution
+```xml
+<!-- Import using Maven Central -->
+<dependency>
+    <groupId>io.github.vittoriopiotti</groupId>
+    <artifactId>PathGraph-JavaFX</artifactId>
+    <version>1.0.2</version>
+</dependency>
+```
 
-**Pom Configuration**
+&nbsp;
+
+_or_
+
+&nbsp;
+
+Manually library import [(download jar)]()
+
+
+> In both of cases is necessary to configure external dependencies
+> ```xml
+>   <dependencies>
+>        <dependency>
+>            <groupId>org.openjfx</groupId>
+>            <artifactId>javafx-controls</artifactId>
+>            <version>${javafx.version}</version> 
+>        </dependency>
+>        <dependency>
+>            <groupId>org.openjfx</groupId>
+>            <artifactId>javafx-fxml</artifactId>
+>            <version>${javafx.version}</version> 
+>        </dependency>
+>        <dependency>
+>            <groupId>org.controlsfx</groupId>
+>            <artifactId>controlsfx</artifactId>
+>            <version>11.2.1</version>
+>        </dependency>
+>        <dependency>
+>            <groupId>org.junit.jupiter</groupId>
+>            <artifactId>junit-jupiter-api</artifactId>
+>            <version>${junit.version}</version>
+>            <scope>test</scope>
+>        </dependency>
+>        <dependency>
+>            <groupId>org.junit.jupiter</groupId>
+>            <artifactId>junit-jupiter-engine</artifactId>
+>            <version>${junit.version}</version>
+>            <scope>test</scope>
+>        </dependency>
+>    </dependencies>
+> ```
+
+&nbsp;
+
+
+**Example of Pom Configuration**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -227,12 +290,12 @@ The user make **Douple Click** or **Right Click** on one of this components of t
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>${javafx.version}</version> <!-- Use property for version -->
+            <version>${javafx.version}</version> 
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>${javafx.version}</version> <!-- Use property for version -->
+            <version>${javafx.version}</version> 
         </dependency>
         <dependency>
             <groupId>org.controlsfx</groupId>
@@ -304,6 +367,107 @@ The user make **Douple Click** or **Right Click** on one of this components of t
 
 &nbsp;
 
+### Available Imports
+
+&nbsp;
+
+
+
+
+<details>
+
+
+<summary>
+  <strong> Containers</strong>
+</summary>
+
+&nbsp;
+
+ ```java
+ import com.vittoriopiotti.pathgraph.containers.PathGraphUI;
+ ```
+
+ ```java
+ import com.vittoriopiotti.pathgraph.containers.PathGraph;
+ ```
+
+&nbsp;
+
+</details>
+
+
+
+<details>
+
+
+<summary>
+  <strong> Constants</strong>
+</summary>
+
+&nbsp;
+
+ ```java
+ import com.vittoriopiotti.pathgraph.constants.AppConstants;
+ ```
+
+ ```java
+ import com.vittoriopiotti.pathgraph.constants.SvgConstants;
+ ```
+
+&nbsp;
+
+</details>
+
+
+
+<details>
+
+
+<summary>
+  <strong> Data Transfer Objects</strong>
+</summary>
+
+&nbsp;
+
+
+
+ ```java
+ import com.vittoriopiotti.pathgraph.dto.NodeDTO;
+ ```
+ 
+ ```java
+ import com.vittoriopiotti.pathgraph.dto.EdgeDTO;
+ ```
+ 
+ ```java
+ import com.vittoriopiotti.pathgraph.dto.ConnectionDTO;
+ ```
+ 
+ ```java
+ import com.vittoriopiotti.pathgraph.dto.GraphDTO;
+ ```
+
+_Major details on [Data Transfer Objects](#data-transfer-object)_
+
+
+&nbsp;
+
+</details>
+
+
+&nbsp;
+
+
+ 
+
+
+
+
+
+### PathGraph Creation
+
+
+&nbsp;
 
 ```java
 /* Vanilla configuration */
@@ -384,6 +548,8 @@ PathGraphUI pg = (
 
 
 
+
+
 &nbsp;
 
 </details>
@@ -453,6 +619,7 @@ import java.io.IOException;
 
 /* PathGraph import */
 import com.vittoriopiotti.pathgraph.containers.PathGraphUI;
+
 
 public class Main extends Application {
 
@@ -545,7 +712,7 @@ Currently, the styles and configurations are preset and cannot be modified.
 
 
 > [!IMPORTANT]
-> Read the **Javadoc** for more technicals details: [(see)]()
+> Read the **Javadoc** for more technicals details: [(see)](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/spring-core)
 
 
 
@@ -1517,8 +1684,9 @@ pg.toggleUI();
 
 ## 5. DTO · Data Transfer Objects <div id="data-transfer-object"/>
  
- > [!IMPORTANT]
-> Read the **Javadoc** for more technicals details: [(see)]()
+> [!IMPORTANT]
+> Read the **Javadoc** for more technicals details: [(see)](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/spring-core)
+
 
 
 
@@ -1887,28 +2055,6 @@ List<ConnectionDTO> lcdto = (
 This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmart) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmart/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph to specific path graphs features in a stable user interface.
 
 [(See SmartGraph)](https://github.com/brunomnsilva/JavaFXSmartGraph)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
