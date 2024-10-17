@@ -2,14 +2,6 @@
 
 
 
-> [!CAUTION]
-> Bugs in custom callbacks settings in `PathGraph` but `PathGraphUI` work:
->  * **Cannot** to know the selected edge or node during on-click callback on element 
->  * **Cannot** to use the selcted edge or node to make custom callbacks  
-> 
-> Bugs will be fixed with new callbacks managing system in next update
-> 
-> _Working on 1.0.3_
 
 
 <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/socialpreview26.png" alt="Icona" width="100%"/>
@@ -17,11 +9,8 @@
 
 ---
 
-
 Path Graph is a library with all the tools necessary to create and work both path and walk graphs in a stable and simple way.
 
-
-If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated costs, which offers a user-friendly interface to represent, manage, and interact graphs, then this it's the right solution.
 
 
 > [!IMPORTANT]
@@ -55,6 +44,11 @@ If you need a ready-to-use library for user-side representing path graphs in whi
 
 
 ## 1. About <div id="about"/>
+
+
+
+
+
 
 
 <details>
