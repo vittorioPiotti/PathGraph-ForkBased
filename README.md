@@ -13,7 +13,7 @@ Path Graph is a library with all the tools necessary to create and work both pat
 
 
 
-> [!IMPORTANT]
+> [!NOTE]
 > Read the **Javadoc** for more technicals details: [(see)](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/spring-core)
 
 
