@@ -59,7 +59,7 @@ Path Graph is a library with all the tools necessary to create and work both pat
 
 &nbsp;
 
-If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated costs, which offers a user-friendly interface to represent, manage, and interact with path graphs, then PathGraph is the right solution for you.
+If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated costs, which offers a user-friendly interface to represent, manage, and interact graphs, then this it's the right solution. 
 
 &nbsp;
 
