@@ -24,7 +24,7 @@ Path Graph is a library with all the tools necessary to create and work both pat
 > <dependency>
 >   <groupId>io.github.vittoriopiotti</groupId>
 >   <artifactId>PathGraph-JavaFX</artifactId>
->   <version>1.0.2</version>
+>   <version>1.0.3</version>
 > </dependency>
 > ```
 
@@ -224,7 +224,7 @@ The user make **Douple Click** or **Right Click** on one of this components of t
 <dependency>
     <groupId>io.github.vittoriopiotti</groupId>
     <artifactId>PathGraph-JavaFX</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 </dependency>
 ```
 
@@ -2021,7 +2021,7 @@ List<ConnectionDTO> lcdto = (
 
 **Copyright** 2024 Vittorio Piotti [(GitHub page)](https://github.com/vittorioPiotti) [(Personal page)](https://vittoriopiotti.altervista.org/) 
 
-**Version** [v1.0.0](https://github.com/vittorioPiotti/PathGraph-JavaFX/releases/tag/1.0.0)
+**Version** [v1.0.3](https://github.com/vittorioPiotti/PathGraph-JavaFX/releases/tag/1.0.3)
 
 **License** [GPL-3.0](https://github.com/vittorioPiotti/JavaFXPathGraph/blob/master/LICENSE.txt)
 
