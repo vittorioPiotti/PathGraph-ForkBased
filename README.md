@@ -718,7 +718,7 @@ Currently, the styles and configurations are preset and cannot be modified.
 ## 4. Usage <div id="usage"/>
 
 
-> [!IMPORTANT]
+> [!NOTE]
 > Read the **Javadoc** for more technicals details: [(see)](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/spring-core)
 
 
@@ -1691,7 +1691,7 @@ pg.toggleUI();
 
 ## 5. DTO · Data Transfer Objects <div id="data-transfer-object"/>
  
-> [!IMPORTANT]
+> [!NOTE]
 > Read the **Javadoc** for more technicals details: [(see)](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/spring-core)
 
 
