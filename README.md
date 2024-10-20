@@ -4,662 +4,385 @@
 
 
 
-<img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/socialpreview26.png" alt="Icona" width="100%"/>
+
+
+<img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/sp.gif" alt="Icona" width="400"/>
+
+
+**What is PathGraph**
+
+Path Graph is a library with all the tools necessary to create and work both path and walk graphs in a stable and simple way.
+
+**Why PathGraph**
+
+If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated costs, which offers a user-friendly  to represent, manage, and interact graphs, then this it's the right solution. 
+
+
+**Fork-Based Project**
+
+This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0). It is modified to suite in specific path graphs features in a stable interface.
+
+---
+
+
+> [!NOTE]
+> Read the **Javadoc** for more details: [`PathGraph-JavaFX-1.0.9-javadoc`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/spring-core)
+
+
+> [!NOTE]
+> Library available on **Maven Central:** [`PathGraph-JavaFX-1.0.9`](https://central.sonatype.com/artifact/io.github.vittoriopiotti/PathGraph-JavaFX/1.0.9/overview)
+> ```xml
+> <dependency>
+>   <groupId>io.github.vittoriopiotti</groupId>
+>   <artifactId>PathGraph-JavaFX</artifactId>
+>   <version>1.0.9</version>
+> </dependency>
+> ```
+
+## Index
+
+ 1. [Features](#features)
+ 2. [Graph Logic](#graph-logic)
+ 3. [Get Started](#get-started)
+ 4. [Ready to Code](#ready-to-code)
+ 5. [Examples](#examples)
+ 6. [Callbacks](#callbacks)
+ 7. [DTO · Data Transfer Object](#data-transfer-object)
+ 8. [JSON · Data Management](#json-data-management)
+ 9. [Configuration and Styling](#configurations-and-styling)
+ 10. [Licenses](#licenses)
+
+[_Fork-Based On SmartGraph_](#fork-based-on-smartgraph)
+
 
 
 ---
 
-Path Graph is a library with all the tools necessary to create and work both path and walk graphs in a stable and simple way.
 
 
 
-> [!NOTE]
-> Read the **Javadoc** for more technicals details: [(see)](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/spring-core)
 
 
-> [!NOTE]
-> Library available on **Maven Central** [(see)](https://central.sonatype.com/artifact/io.github.vittoriopiotti/PathGraph-JavaFX)
-> ```xml
-> <!-- Import using Maven Central -->
-> <dependency>
->   <groupId>io.github.vittoriopiotti</groupId>
->   <artifactId>PathGraph-JavaFX</artifactId>
->   <version>1.0.4</version>
-> </dependency>
-> ```
 
+## 1. Features <div id="features"/>
 
 
-## Main Index
 
- 1. [About](#about)
- 2. [Features](#features)
- 3. [Get Started](#get-started)
- 4. [Usage](#usage)
- 5. [DTO · Data Transfer Objects](#data-transfer-object)
- 6. [JSON · Data Management](#json-data-management)
- 7. [Licenses](#licenses)
 
-[Fork-Based On SmartGraph](#fork-based-on-smartgraph)
-
-
-## 1. About <div id="about"/>
-
-
-
-
-
-
-
-<details>
-  
-<summary>
-  <strong> Why PathGraph</strong>
-</summary>
-
-&nbsp;
-
-If you need a ready-to-use library for user-side representing path graphs in which there are nodes, edges, and associated costs, which offers a user-friendly interface to represent, manage, and interact graphs, then this it's the right solution. 
-
-&nbsp;
-
-</details>
-
-<details>
-
-
-<summary>
-  <strong> Fork Based Project</strong>
-</summary>
-
-&nbsp;
-
-This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmart) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmart/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph to specific path graphs features in a stable user interface.
-
-
-&nbsp;
-
-</details>
-
-
-<details>
-
-
-<summary>
-  <strong> How Work </strong>
-</summary>
-
-&nbsp;
-
-
-
-Provided to represent path graphs through nodes, edges, and associated costs with the following logic:
-
-* Nodes can be only characters with uppercase alphabet letters to maxium 26 nodes
-* Not provided over limits of two edges with same direction between two same nodes
-* Not provided loops creation
-* Edge cost can be only `int` variable type to rappresent integer numbers
-* Edges can be directed:
-
-
-
-    
-  
-    ```java
-    /* Edge without direction */
-    (int) SmartEdgeBase.DIRECTION_BIDIRECTIONAL;
-    ```
-
-   
-    
-    ```java
-    */ Edge in natural direction */
-    (int) SmartEdgeBase.DIRECTION_FIRST;
-    ```
-    
-     
-    
-    ```java
-    */ Edge in opposite direction */
-    (int) SmartEdgeBase.DIRECTION_SECOND;
-    ```
-
-
-
-
-> Adding new edge to nodes with one bidirectional edge implies the automatic adjustment of the bidirectional edge to redirect it at the opposite direction of the new edge
-
-> Adding new bidirectional edge to nodes with one bidirectional edge implies the automatic adjustment of both edges to redirect them at the preferred direction to make them in opposite direction from each other
-
-
-
-&nbsp;
-
-</details>
-
-
-
-
-
-
-
-
-## 2. Features <div id="features"/>
-
-<img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/sp.gif" alt="Icona" width="400"/>
-
-### Interface
-
-| Advanced| Edge and Nodes | Graph |
+| <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/clickBackground.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test7ui.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test8ui.gif" alt="Icona" width="100%"/>|
 | ------------ | ------------ | ------------ |
 | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test5ui.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test1ui.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test4ui.gif" alt="Icona" width="100%"/>|
-| [Upload](#upload) | [New Node](#new-node)  |  [Clear Graph](#cleargraph) |
-| [Download](#download)| [Delete Node](#delete-node) |  [Do Drag](#dodrag)  |
-| | [Rename Node](#rename-node) |   [Do Zoom](#dozoom)  |
-| |[New Edge](#new-edge) |  [Take Screenshot](#screenshot) |
-| | [Delete Edge](#delete-edge)  | [Adjust Position](#adjustposition)  | 
-| | [Rotate Edge](#rotate-edge) |   |
-| | [Set Cost](#set-cost) |  |
-| | [Split Edge](#split-edge) |  |
-| | [Show Path](#show-path)  |  |
+
+ * **Nodes:** [`New Node`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#newNode()), [`Rename Node`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#renameNode(char,char)), [`Delete Node`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#deleteNode(char))
+   
+ * **Edges:** [`New Edge`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#newEdge()), [`Delete Edge`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#deleteEdge(char)), [`Rotate Edge`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#rotateEdge(char,char)), [`Split Edge`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#splitEdge(char,char)), [`Set Cost`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#setCost(char,char,int))
+   
+ * **Graph:** [`Upload JSON`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#uploadJSON(java.io.File)), [`Download JSON`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#downloadJSON(java.io.File)), [`Clear Graph`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#clearGraph()), [`Show Path`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#showPath(java.util.List)), [`Take Screenshot`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#takeScreenshot()), [`Drag`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#doDrag()), [`Zoom`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#doZoom()), [`Adjust Position`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#adjustPosition(double))
+
+ * **UI:** [`Hide UI`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraphUI.html#hideUI()), [`Show UI`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraphUI.html#showUI()), [`Toggle UI`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraphUI.html#toggleUI()), [`Set UI`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraphUI.html#setUI(boolean,boolean,boolean,boolean,boolean,boolean))
+
+ 
 
 
 
-### Graph
-
-The user make **Douple Click** or **Right Click** on one of this components of the  to do:
-| Background| Node | Edge |
-| ------------ | ------------ | ------------ |
-| <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/clickBackground.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test7ui.gif" alt="Icona" width="100%"/> | <img src="https://github.com/vittorioPiotti/PathGraph-ForkBased/blob/master/github/test8ui.gif" alt="Icona" width="100%"/>|
-| [New Node](#new-node) | [New Edge](#new-edge) | [Delete Edge](#delete-edge) |
-|  | [Delete Node](#delete-node) | [Rotate Edge](#rotate-edge) |
-|  |  | [Split Edge](#split-edge) |
-|  |  | [Set Cost](#set-cost) |
-
-> Empty callbacks to disable interactions on graph
-
-> Ability to create and use custom callbacks of the graph interactions 
 
 
 
+
+
+
+## 2. Graph Logic <div id="graph-logic"/>
+
+* Limit of 26 Nodes nameable only with uppercase characters
+* Limit of two edges with opposite directions beetween two nodes
+* Loop creation is not allowed
+* Edge cost is an integer number
+* Edge directions can be: [`Bidirectional`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/Constants.html#BIDIRECTIONAL), [`Natural Direction`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/Constants.html#BIDIRECTIONAL), [`Opposite Direction`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/Constants.html#BIDIRECTIONAL)
+
+
+
+
+
+&nbsp;
 
 
 
 ## 3. Get Started <div id="get-started"/>
 
+### Requirements
+
+
+[`Java-21`](https://www.oracle.com/java/technologies/downloads/#java21), [`JavaFX-22`](https://gluonhq.com/products/javafx/)
+
+_Forward-compatible_
+
+### Dependencies
+
+**Import External Dependencies**
+
+[`JavaFX-Swing-22`](https://mvnrepository.com/artifact/org.openjfx/javafx-swing/22), ​[`JavaFX-Controls-22`](https://mvnrepository.com/artifact/org.openjfx/javafx-controls/22), ​ [`JavaFX-FXML-22`](https://mvnrepository.com/artifact/org.openjfx/javafx-fxml/22)
+
+**Import Library**
+
+[`PathGraph-JavaFX-1.0.9`](https://central.sonatype.com/artifact/io.github.vittoriopiotti/PathGraph-JavaFX/1.0.9/overview)
+
+
+_Able to:_
+
+ * POM configuration:
+
+   ```xml
+   <dependency>
+       <groupId>io.github.vittoriopiotti</groupId>
+       <artifactId>PathGraph-JavaFX</artifactId>
+       <version>1.0.9</version>
+   </dependency>
+   ```
+
+        
+ * Manual configuration:
+   
+   Download and import jar in your module dependencies: [`PathGraph-JavaFX-1.0.9.jar`](https://github.com/vittorioPiotti/PathGraph-JavaFX/releases/tag/1.0.9)
+
 
 
 <details>
   
 <summary>
-  <strong> 1. Requirements</strong>
+   <strong>Show POM.xml dependencies</strong>
 </summary>
 
-&nbsp;
 
-**Java** from: `v.21` _or higher_  [(link)](https://www.oracle.com/java/technologies/downloads/#java21)
-
-**JavaFX** from: `v.22` _or higher_  [(link)](https://gluonhq.com/products/javafx/)
-
-&nbsp;
-
-</details>
-
-
-
-<details>
-  
-<summary>
-  <strong> 2. Dependencies</strong>
-</summary>
-
-&nbsp;
-
-**Import PathGraph**
-
-&nbsp;
 
 ```xml
-<!-- Import using Maven Central -->
 <dependency>
     <groupId>io.github.vittoriopiotti</groupId>
     <artifactId>PathGraph-JavaFX</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.9</version>
 </dependency>
+<dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-swing</artifactId>
+    <version>22</version>
+</dependency>
+<dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-controls</artifactId>
+    <version>22</version>
+</dependency>
+<dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-fxml</artifactId>
+    <version>22</version>
+</dependency>
+
+
 ```
 
-&nbsp;
+
+
+
+</details>
+
+
+## 4. Ready to Code <div id="ready-to-code"/>
+
+### Import Component
+
+ ```java
+ import com.vittoriopiotti.pathgraph.app.*;
+ ```
+
+### Instance Object
+
+> [!NOTE]
+>  * `PathGraph` to create your custom interface
+>  * `PathGraphUI`for ready-to-use interface
+
+**PathGraph**
+
+
+Vanilla configurations to use in your project in which create your custom UI.
+
+
+Handles the graph's display and logic independently of the user interface, acting as a standalone component without any user interface restrictions, provifind all necessary features.
+
+```java
+PathGraph pg = new PathGraph();
+```
+
+> Empty callbacks
 
 _or_
 
-&nbsp;
 
-Manually library import [(download jar)]()
-
-
-> In both of cases is necessary to configure external dependencies
-> ```xml
->   <dependencies>
->        <dependency>
->            <groupId>org.openjfx</groupId>
->            <artifactId>javafx-controls</artifactId>
->            <version>${javafx.version}</version> 
->        </dependency>
->        <dependency>
->            <groupId>org.openjfx</groupId>
->            <artifactId>javafx-fxml</artifactId>
->            <version>${javafx.version}</version> 
->        </dependency>
->        <dependency>
->            <groupId>org.controlsfx</groupId>
->            <artifactId>controlsfx</artifactId>
->            <version>11.2.1</version>
->        </dependency>
->        <dependency>
->            <groupId>org.junit.jupiter</groupId>
->            <artifactId>junit-jupiter-api</artifactId>
->            <version>${junit.version}</version>
->            <scope>test</scope>
->        </dependency>
->        <dependency>
->            <groupId>org.junit.jupiter</groupId>
->            <artifactId>junit-jupiter-engine</artifactId>
->            <version>${junit.version}</version>
->            <scope>test</scope>
->        </dependency>
->    </dependencies>
-> ```
-
-&nbsp;
-
-
-**Example of Pom Configuration**
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.example</groupId> <!-- Replace with your group ID -->
-    <artifactId>your-artifact-id</artifactId> <!-- Replace with your artifact ID -->
-    <version>1.0-SNAPSHOT</version>
-    <name>Your Project Name</name> <!-- Replace with your project name -->
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>5.10.2</junit.version>
-        <javafx.version>22</javafx.version> <!-- Define JavaFX version here -->
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>${javafx.version}</version> 
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
-            <version>${javafx.version}</version> 
-        </dependency>
-        <dependency>
-            <groupId>org.controlsfx</groupId>
-            <artifactId>controlsfx</artifactId>
-            <version>11.2.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version> <!-- Updated version -->
-                <configuration>
-                    <source>21</source>
-                    <target>21</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.8</version>
-                <executions>
-                    <execution>
-                        <id>default-cli</id>
-                        <configuration>
-                            <mainClass>com.example.yourpath.YourMainClass</mainClass> <!-- Replace with your main class path -->
-                            <launcher>app</launcher>
-                            <jlinkZipName>app</jlinkZipName>
-                            <jlinkImageName>app</jlinkImageName>
-                            <noManPages>true</noManPages>
-                            <stripDebug>true</stripDebug>
-                            <noHeaderFiles>true</noHeaderFiles>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-</project>
-```
-
-
-&nbsp;
-
-</details>
-
-
-
-
-<details>
-  
-<summary>
-  <strong> 3. Prepare <div id="prepare"/></strong>
-</summary>
-
-&nbsp;
-
-### Available Imports
-
-&nbsp;
-
-
-
-
-<details>
-
-
-<summary>
-  <strong> Containers</strong>
-</summary>
-
-&nbsp;
-
- ```java
- import com.vittoriopiotti.pathgraph.containers.PathGraphUI;
- ```
-
- ```java
- import com.vittoriopiotti.pathgraph.containers.PathGraph;
- ```
-
-&nbsp;
-
-</details>
-
-
-
-<details>
-
-
-<summary>
-  <strong> Constants</strong>
-</summary>
-
-&nbsp;
-
- ```java
- import com.vittoriopiotti.pathgraph.constants.AppConstants;
- ```
-
- ```java
- import com.vittoriopiotti.pathgraph.constants.SvgConstants;
- ```
-
-&nbsp;
-
-</details>
-
-
-
-<details>
-
-
-<summary>
-  <strong> Data Transfer Objects</strong>
-</summary>
-
-&nbsp;
-
-
-
- ```java
- import com.vittoriopiotti.pathgraph.dto.NodeDTO;
- ```
- 
- ```java
- import com.vittoriopiotti.pathgraph.dto.EdgeDTO;
- ```
- 
- ```java
- import com.vittoriopiotti.pathgraph.dto.ConnectionDTO;
- ```
- 
- ```java
- import com.vittoriopiotti.pathgraph.dto.GraphDTO;
- ```
-
-_Major details on [Data Transfer Objects](#data-transfer-object)_
-
-
-&nbsp;
-
-</details>
-
-
-&nbsp;
-
-
- 
-
-
-
-
-
-### PathGraph Creation
-
-
-&nbsp;
 
 ```java
-/* Vanilla configuration */
-PathGraph pg = new PathGraph()                                           
+PathGraph pg = new PathGraph(
+    (ContextMenuCallback) ()->{},
+    (EdgeCallback) (MouseEvent e, Character c1, Character c2)->{},
+    (NodeCallback) (MouseEvent e, Character c1, Character c2)->{},
+    (BackgroundCallback) (MouseEvent e)->{}, 
+    (ZoomCallback) (Double n)->{},
+    (AdjustPositionCallback) ()->{}
+);
 ```
 
-> **Create your Custom UI** using PathGraph tools
+> With callbacks
 
-> **Confirue Graph Settings** calling `pg.setCallbacks()` [(see)](#setcallbacks)
 
-&nbsp;
 
-_or_
 
-&nbsp;
+
+**PathGraphUI**
+
+Ready-to-use configuration with default UI.
+
+Extends PathGraph to provide a layer on top of the graph management functionalities. It allows for the interaction with the graph through a visual interface over the underlying graph logic.
+
 
 ```java
-/* Ready-To-Use configuration */
-PathGraphUI pg = (
-  new PathGraphUI(
-    (Stage) primaryStage,
+PathGraphUI pg = new PathGraphUI(
+    (Stage) stage,
     (Scene) scene
-  )
-); 
+);
 ```
 
-> **Graph with Defaul Settings** automatically configurated
+> With default UI
 
-> **UI with Default Settings:** all components are enabled
-
-> **Graph Settings Customizable** calling `pg.setCallbacks()` [(see)](#setcallbacks)
-
-> **UI Settings Customizable** calling `pg.setUI()`  [(see)](#setui)
-
-&nbsp;
 
 _or_
 
-&nbsp;
+
 
 ```java
-/* Ready-To-Use with custom configuration */
-PathGraphUI pg = (
-  new PathGraphUI(
-    (Stage) primaryStage,
+PathGraphUI pg = new PathGraphUI(
+    (Stage) stage,
     (Scene) scene,
-
+    
     /* is enabled top-left menu */
     true,
-  
+    
     /* is enabled bot-left menu */
     true,
-  
+    
     /* is enabled bot-mid menu */
     true,
-  
+    
     /* is enabled right-mid menu */
     true,
-  
+    
     /* is enabled top-right menu */
     true,
-  
+    
     /* is hide UI */
     false
 
-  )
-); 
+);
 ```
 
-> **Graph with Defaul Settings** automatically configurated
-
-> **UI with Custom Settings:** choice which components to show
-
-> **Graph Settings Customizable** calling `pg.setCallbacks()` [(see)](#setcallbacks)
-
-> **UI Settings Customizable** calling `pg.setUI()`  [(see)](#setui)
+> With custom UI
 
 
 
+In both cases are customizable the visibility of the UI and its components only with an instance of `PathGraphUI`:
+
+[`Hide UI`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraphUI.html#hideUI()), [`Show UI`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraphUI.html#showUI()), [`Toggle UI`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraphUI.html#toggleUI()), [`Set UI`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraphUI.html#setUI(boolean,boolean,boolean,boolean,boolean,boolean))
 
 
-
-&nbsp;
-
-</details>
+### Setup  <div id="setup"/>
 
 
+> [!NOTE]
+> **To enable the use of library** `setup` must be called **only one time after making stage visible** with `(Stage) stage.show()`
+>
+> _Before calling setup, no operations of any kind can be performed on the graph_
 
-  
-<details>
-  
-<summary>
-  <strong> 4. Setup <div id="setup"/></strong>
-</summary>
 
-&nbsp;
-
-   
 ```java
 pg.setup();
 ```
 
-&nbsp;
+
 
 _or_
 
-&nbsp;
+
 
 ```java
 pg.setup().thenRun(() -> {
 
-  /* action to perform on first load */
-  /* e.g. put here components to add onload */
+  /* actions to perform on first load */
+  /* e.g. put here components, callbacks setting, graph configurations */
 
 });
 ```
 
-&nbsp;
+Graph operations are limited to these contexts:
+
+ * **Setup:** ensures execution post-initialization in `pg.setup().thenRun(()->{})`.
+ * **Event Handlers:** Safe within JavaFX event actions.
+ * **JavaFX Timers:** Use for delayed, thread-safe execution.
 
 
-In both of cases:
-
-> Setup is required **to enable the use** of library
-
-> To call **only after** called `(Stage) primaryStage.show()`
-
-&nbsp;
-
-</details>
+## 5. Examples <div id="examples"/>
 
 
-<details>
-  
-<summary>
-  <strong> 5. Ready</strong>
-</summary>
+### PathGraph
 
-&nbsp;
+Vanilla configurations to use in your project in which create your custom UI.
+
 
 
 ```java
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import java.io.IOException;
+import javafx.scene.layout.BorderPane;
+import com.vittoriopiotti.pathgraph.app.PathGraph;
 
-/* PathGraph import */
-import com.vittoriopiotti.pathgraph.containers.PathGraphUI;
-
-
-public class Main extends Application {
+public class ExampleOfPathGraph extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void start(Stage primaryStage) {
 
         /* 1. Create javafx window */
         BorderPane root = new BorderPane();
-        root.setBackground(Background.fill(Color.web("#dee2e6")));
-        Scene scene = new Scene(root, 750, 550);
+        Scene scene = new Scene(root,500,300);
         primaryStage.setScene(scene);
 
         /* 2. Show primary stage */
         primaryStage.show();
 
-        /* 3. Create PathGraph object */
-        PathGraphUI pg = new PathGraphUI(
-                primaryStage,
-                scene
-        );
+        /* 3. Instance object */
+        PathGraph pg = new PathGraph();
 
         /* 4. Add PathGraph in a container */
         root.setCenter(pg);
 
-        /* 5. Custom configurations PathGraph    */
-        pg.enableListenersGraph(true);
-        pg.enableListenersPane(true);
-        pg.setAutomaticLayout(true);
-
-        /* 6. Setup PathGraph */
+        /* 6. Setup */
         pg.setup().thenRun(() -> {
 
-            /* 7. Make Graphs with PathGraph */
+            /* 5. Custom configurations  */
+            pg.enableListenersGraph(true);
+            pg.enableListenersPane(true);
+            pg.setAutomaticLayout(true);
+
+            /* Set callbacks */
+            pg.setBackgroundCallback(event -> {
+                pg.newNode();
+                event.consume();
+            });
+            pg.setNodeCallback((event,label) -> {
+                pg.newEdge(label);
+                event.consume();
+            });
+            pg.setEdgeCallback((event,start,end) -> {
+                pg.deleteEdge(start,end);
+                event.consume();
+            });
+            
+            /* 7. Make Graphs */
             pg.newNode('A');
             pg.newNode('B');
             pg.newNode('C');
@@ -670,1034 +393,137 @@ public class Main extends Application {
 
     }
 
-
     public static void main(String[] args) {
         launch();
     }
-    
+
 }
 
 ```
 
-> Operations are available **only** after calling `pg.setup()`
 
+### PathGraphUI
 
-&nbsp;
-
-</details>
-
-
-
-
-
-
-<details>
-  
-<summary>
-  <strong> 6. Configuration and Styling</strong>
-</summary>
-
-&nbsp;
-
-
-In future versions will be optimized the management of configurations and styles similar to the original project of the fork [(see)](https://github.com/brunomnsilva/JavaFXSmartGraph#configuration-and-styling).
-
-Currently, the styles and configurations are preset and cannot be modified.
-
-
-
-&nbsp;
-
-</details>
-
-
-
-
-
-
-## 4. Usage <div id="usage"/>
-
-
-> [!NOTE]
-> Read the **Javadoc** for more technicals details: [(see)](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/spring-core)
-
-
-
-> [!NOTE]
-> Operations are available **only** after calling `pg.setup()` [(see)](#setup)
-
-
-
-
-### Usage Index
-
- 1. [Node](#node)
- 2. [Edge](#edge)
- 3. [Graph](#graph)
- 4. [UI](#ui)
-
-
-
-
-
-
-### 4.1. Node <div id="node"/>
-
-
-> Every method is a function type and return the status of the operation
-
-> Each method automatically update the graph
-
-<details>
-  
-<summary>
-  <strong> New Node <div id="new-node"/> </strong>
-</summary>
-
-&nbsp;
+Ready-to-use configuration with default UI.
 
 
 ```java
-boolean flag = (
-  pg.newNode(
-    /* node name to create */
-    (char) 'A'
-  )
-);
-```
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.scene.layout.BorderPane;
+import com.vittoriopiotti.pathgraph.app.PathGraphUI;
 
-&nbsp;
+public class ExampleOfPathGraphUI extends Application {
 
-</details>
+    @Override
+    public void start(Stage primaryStage) {
 
+        /* 1. Create javafx window */
+        BorderPane root = new BorderPane();
+        Scene scene = new Scene(root,500,300);
+        primaryStage.setScene(scene);
 
-<details>
-  
-<summary>
-  <strong> Rename Node <div id="rename-node"/></strong>
-</summary>
+        /* 2. Show primary stage */
+        primaryStage.show();
 
-&nbsp;
+        /* 3. Instance object */
+        PathGraphUI pg = new PathGraphUI(primaryStage,scene);
 
-```java
-boolean flag = (
-  pg.renameNode(
+        /* 4. Add PathGraph in a container */
+        root.setCenter(pg);
 
-    /* last node name */
-    (char) 'A',
+        /* 5. Setup */
+        pg.setup().thenRun(() -> {
 
-    /* new node name */
-    (char) 'B'
+            /* 6. Make Graphs */
+            pg.newNode('A');
+            pg.newNode('B');
+            pg.newNode('C');
+            pg.newEdge('A', 'B', 1);
+            pg.newEdge('C', 'A', 2, false);
 
-  )
-);
-```
+        });
 
-&nbsp;
+    }
 
-</details>
+    public static void main(String[] args) {
+        launch();
+    }
 
+}
 
-
-<details>
-  
-<summary>
-  <strong> Delete Node <div id="delete-node"/> </strong>
-</summary>
-
-&nbsp;
-
-```java
-boolean flag = (
-  pg.deleteNode(
-    /* name of the node to remove */
-    (char) 'A'
-  )
-);
-```
-
-&nbsp;
-
-</details>
-
-
-### 4.2. Edge <div id="edge"/>
-
-
-> Every method is a function type and return the status of the operation
-
-> Each method automatically update the graph
-
-<details>
-  
-<summary>
-  <strong> New Edge <div id="new-edge"/> </strong>
-</summary>
-
-&nbsp;
-
-
-
-
-```java
-/* Default direction without bidirectional */
-boolean flag = (
-  pg.newEdge(
-
-    /* start node name */
-    (char) 'A',
-
-    /* end node name */
-    (char) 'B',
-
-    /* edge cost */
-    (int) 23
-
-  )
-);
 ```
 
 
-```java
-/* Default direction with bidirectionality */
-boolean flag = (
-  pg.newEdge(
+## 6. Callbacks <div id="callbacks"/>
 
-    /* start node name */
-    (char) 'A',
+>[!NOTE]
+> Customizable callbacks only with an instance of `PathGraph` _(`PathGraphUI`is a ready-to-use configuration)._
 
-    /* end node name */
-    (char) 'B',
+**Usage:**
 
-    /* edge cost */
-    (int) 23,
+1. Import package to use callback objects:
 
-    /* edge with arrow */
-    (boolean) true
-
-  )
-);
-```
-
-
-```java
-/* Custom direction */                        
-boolean flag = (
-  pg.newEdge(
-
-    /* start node name */
-    (char) 'A',
-
-    /* end node name */
-    (char) 'B',
-
-    /* edge cost */
-    (int) 23,
-
-    /* edge direction */
-    (int) SmartGraphEdgeBase.DIRECTION_SECOND
-
-  )
-);
-```
-
-&nbsp;
-
-
-> The direction can be
->
-> ```java
-> /* Edge without direction */
-> (int) SmartEdgeBase.DIRECTION_BIDIRECTIONAL;
-> ```
-> 
-> ```java
-> */ Edge in natural direction */
-> (int) SmartEdgeBase.DIRECTION_FIRST;
-> ```
-> 
-> ```java
-> */ Edge in opposite direction */
-> (int) SmartEdgeBase.DIRECTION_SECOND;
-
-&nbsp;
-
-
-</details>
-
-<details>
-<summary>
-  <strong> Delete Edge <div id="delete-edge"/> </strong>
-</summary>
-
-&nbsp;
-
-```java
-boolean flag = (
-  pg.deleteEdge(
-
-    /* start node */
-    (char) 'A',
-
-    /* end node */
-    (char) 'B'
-
-  )
-);
-```
-
-
-
-&nbsp;
-
-</details>
-
-
-
-<details>
-  
-<summary>
-  <strong> Rotate Edge <div id="rotate-edge"/> </strong>
-</summary>
-
-&nbsp;
-
-```java
-/* Default rotation */
-boolean flag = (
-  pg.rotateEdge(
-
-    /* start node */
-    (char) 'A',
-
-    /* end node */
-    (char) 'B'
-
-  )
-);                                                   
-```
-
-
-```java
-/* Rotation with specific direction */
-boolean flag = (
-  pg.rotateEdge(
-
-    /* start node */
-    (char) 'A',
-
-    /* end node */
-    (char) 'B',
-
-    /* edge direction */
-    (int) SmartGraphEdgeBase.DIRECTION_FIRST
-
-  )
-);     
-```
-
-
-&nbsp;
-
-
-> The direction can be
->
-> ```java
-> /* Edge without direction */
-> (int) SmartEdgeBase.DIRECTION_BIDIRECTIONAL;
-> ```
-> 
-> ```java
-> */ Edge in natural direction */
-> (int) SmartEdgeBase.DIRECTION_FIRST;
-> ```
-> 
-> ```java
-> */ Edge in opposite direction */
-> (int) SmartEdgeBase.DIRECTION_SECOND;
-
-
-&nbsp;
-
-</details>
-
-
-
-
-<details>
-  
-<summary>
-  <strong> Split Edge <div id="split-edge"/> </strong>
-</summary>
-
-&nbsp;
-
-```java
-boolean flag = (
-  pg.splitEdge(
-
-    /* start node */
-    (char) 'A',
-
-    /* end node */
-    (char) 'B'
-
-  )
-);   
-```
-
-
-
-&nbsp;
-
-</details>
-
-
-
-<details>
-<summary>
-  <strong> Set Arrow <div id="set-arrow"/> </strong>
-</summary>
-
-&nbsp;
-
-```java
-boolean flag = (
-  pg.rotateEdge(
-
-    /* start node */
-    (char) 'A',
-
-    /* end node */
-    (char) 'B',
-
-    /* is arrowed edge */
-    (boolean) false
-
-  )
-); 
-```
-
-
-
-&nbsp;
-
-</details>
-
-
-
-
-<details>
-  
-<summary>
-  <strong> Set Cost <div id="set-cost"/> </strong>
-</summary>
-
-&nbsp;
-
-```java
-boolean flag = (
-  pg.splitEdge(
-
-    /* start node */
-    (char) 'A',
-
-    /* end node */
-    (char) 'B',
-
-    /* edge cost */
-    (int) 200
-
-  )
-);  
-```
-
-
-&nbsp;
+      ```java
+      import com.vittoriopiotti.pathgraph.callbacks.*;
+      ```
+      
+2. Call setter methods to apply new callbacks passing callback objects:
    
-</details>
+     [`Set All Callbacks`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#setAllCallbacks(com.vittoriopiotti.pathgraph.callbacks.ContextMenuCallback,com.vittoriopiotti.pathgraph.callbacks.EdgeCallback,com.vittoriopiotti.pathgraph.callbacks.NodeCallback,com.vittoriopiotti.pathgraph.callbacks.BackgroundCallback,com.vittoriopiotti.pathgraph.callbacks.ZoomCallback,com.vittoriopiotti.pathgraph.callbacks.AdjustPositionCallback)), [`Set Context Menu Callback`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#setContextMenuCallback(com.vittoriopiotti.pathgraph.callbacks.ContextMenuCallback)), [`Set Edge Callback`](), [`Set Node Callback`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#setNodeCallback(com.vittoriopiotti.pathgraph.callbacks.NodeCallback)), [`Set Background Callback`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#setBackgroundCallback(com.vittoriopiotti.pathgraph.callbacks.BackgroundCallback)), [`Set Zoom Callback`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#setZoomCallback(com.vittoriopiotti.pathgraph.callbacks.ZoomCallback)), [`Set Adjust Position Callback`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#setAdjustPositionCallback(com.vittoriopiotti.pathgraph.callbacks.AdjustPositionCallback))
 
-
-
-
-
-
-
-### 4.3. Graph <div id="graph"/>
-
-
-
-<details>
-  
-<summary>
-  <strong>Enable Listeners Graph <div id="enablelistenersgraph"/></strong>
-</summary>
-
-&nbsp;
+**Snippet:**
 
 ```java
-pg.enableListenersGraph((boolean) true);
+EdgeCallback ec = (event,start,end) ->{
+    if (event.getButton() == MouseButton.SECONDARY) {
+        System.out.println(
+                pg.rotateEdge(start,end) ?
+                        "rotate edge successfully" :
+                        "rotate edge  error"
+        );
+    }else if (event.getButton() == MouseButton.PRIMARY) {
+        System.out.println(
+                pg.deleteEdge(start,end) ?
+                        "delete edge successfully" :
+                        "delete edge error"
+        );
+    }
+    event.consume();
+};
+
+(PathGraph) pg.setEdgeCallback(ec);
 ```
 
 
+>[!TIP]
+> 1. Use of a `ContextMenu` with custom `MenuItem` or `Button` to perform the actions
+>    
+> 2. Use `event.consume()` to prevent the propagation of the event
 
-&nbsp;
 
-</details>
 
-<details>
-  
-<summary>
-  <strong>Enable Listeners Pane <div id="enablelistenerspane"/></strong>
-</summary>
 
-&nbsp;
 
-```java
-pg.enableListenersPane((boolean) true);
-```
 
 
 
-&nbsp;
-
-</details>
-
-
-
-<details>
-  
-<summary>
-  <strong>  Set Graph</strong>
-</summary>
-
-&nbsp;
-
-```java
-pg.setGraph(
-  /* meta data of the graph to upload */
-  (GraphDTO) mt
-);
-```
-
-```java
-pg.setGraph(
-
-  /* meta data of the graph to upload */
-  (GraphDTO) mt,
-
-  /* is animated upload of new graph */
-  (boolean) true
-  
-);
-```
-
-&nbsp;
-
-</details>
-
-
-
-
-<details>
-  
-<summary>
-  <strong>Set Automatic Layout <div id="setdynamiclayout"/></strong>
-</summary>
-
-&nbsp;
-
-```java
-pg.setAutomaticLayout();
-```
-
-> _Original method of SmartGraph [(see)](https://github.com/brunomnsilva/JavaFXSmartGraph#basic-usage)_
-
-
-
-&nbsp;
-
-</details>
-
-
-
-<details>
-  
-<summary>
-  <strong>Set Callbacks <div id="setcallbacks"/></strong>
-</summary>
-
-&nbsp;
-
-```java
-pg.setCallbacks(
-
-   /* to possibly close an open `ContextMenu` */
-   Runnable closeContextMenu,
-
-   /* action to perform on arrow edge event   */              
-   BiConsumer<MouseEvent, Edge<E, V>> onClickArrow,
-
-   /* action to perform on node event         */
-   BiConsumer<MouseEvent, Vertex<V>> onClickNode,
-
-   /* action to perform on click background   */
-   Consumer<MouseEvent> onClickBackground,
-
-   /* action to perform on scroll background  */            
-   Consumer<Double> onChangeZoom,
-
-   /* action to perform on drag background    */        
-   Runnable doAdjustPosition
-
-);
-```
-
-
-
-&nbsp;
-
-</details>
-
-
-
-<details>
-  
-<summary>
-  <strong>  Get Graph <div id="getgraph"/></strong>
-</summary>
-
-&nbsp;
-
-```java
-GraphDTO gto = pg.getGraph();
-```
-
-&nbsp;
-   
-</details>
-
-<details>
-  
-<summary>
-  <strong>  Show Path <div id="show-path"/> </strong> 
-</summary>
-
-&nbsp;
-
-```java
-pg.showPath((List<NodeDTO>) lpn);
-```
-
-&nbsp;
-   
-</details>
-
-
-
-<details>
-  
-<summary>
-  <strong>  Clear Graph <div id="cleargraph"/> </strong>
-</summary>
-
-&nbsp;
-
-```java
-pg.clearGraph();
-```
-
-
-&nbsp;
-   
-</details>
-
-<details>
-  
-<summary>
-  <strong>  Adjust Position <div id="adjustPosition"/> </strong>
-</summary>
-
-&nbsp;
-
-```java
-pg.adjustPosition((double) 0.7);
-```
-
-&nbsp;
-   
-</details>
-
-
-
-<details>
-  
-<summary>
-  <strong> Take Screenshot <div id="screenshot"/> </strong>
-</summary>
-
-&nbsp;
-
-```java
-/* with animation */
-CompletableFuture<Integer> future = (
-  pg.takeScreenshot();
-);
-```
-
-```java
-/* set animation state */
-CompletableFuture<Integer> future = (
-  pg.takeScreenshot(
-    (boolean)false
-  )
-);
-```
-
-
-&nbsp;
-
-
-> Handle both asynchronous operations
->
-> ```java
-> pg.takeScreenshot().thenAccept(status -> {
-> 
->   /* Use flag to check operation */
->   int flag = (int) status;
-> 
-> );
-> ```
-
-&nbsp;
-
-
-> The response status can be
->
-> ```java
-> /* process interrupted */
-> (int) UtilitiesCapture.INTERRUPT;       
-> ```
-> 
-> ```java
-> /* process succeeded */
-> (int) UtilitiesCapture.SUCCESS;
-> ```
->
-> ```java
-> /* process error */
-> (int) UtilitiesCapture.ERROR; 
-> ```
-
-
-
-&nbsp;
-  
-</details>
-
-
-
-<details>
-  
-<summary>
-  <strong> Download JSON <div id="download"/></strong>
-</summary>
-
-&nbsp;
-
-
-```java
-/* fixed or floating file chooser */
-int flag = pg.downloadJSON((Window) window); 
-```
-
-```java
-/* whithout file chooser: file alredy chosen */
-int flag = pg.downloadJSON((File) file);             
-```
-
-```java
-/* using data transfer objects */
-/* fixed or floating file chooser */
-int flag = pg.downloadJSON(
-
-  /* file chooser dialog owner window */
-  (Window) window,
-
-  /* data transfer object */
-  (GraphDTO) dto
-
-
-);             
-```
-
-
-```java
-/* using data transfer objects */
-/* whithout file chooser: file alredy chosen */
-int flag = pg.downloadJSON(
-
-  /* file in which save json graph */
-  new File("path/to/file.json"),
-
-  /* data transfer object */
-  (GraphDTO) dto
-
-);             
-```
-
-
-
-&nbsp;
-
-> The response status can be
->
-> ```java
-> /* process interrupted */
-> (int) UtilitiesParser.INTERRUPT;       
-> ```
-> 
-> ```java
-> /* process succeeded */
-> (int) UtilitiesParser.SUCCESS;
-> ```
->
-> ```java
-> /* process error */
-> (int) UtilitiesParser.ERROR; 
-> ```
-
-
-
-
-&nbsp;
-   
-</details>
-
-
-
-<details>
-  
-<summary>
-  <strong>  Upload JSON <div id="upload"/></strong>
-</summary>
-
-&nbsp;
-
-
-
-```java
-/* fixed or floating file chooser*/
-int flag = pg.uploadJSON((Window) window);  
-```
-
-```java
-/* whithout file chooser: file alredy chosen */
-int flag = pg.uploadJSON((File) file);  
-```
-
-&nbsp;
-
-> The response status can be
->
-> ```java
-> /* process interrupted */
-> (int) UtilitiesParser.INTERRUPT;       
-> ```
-> 
-> ```java
-> /* process succeeded */
-> (int) UtilitiesParser.SUCCESS;
-> ```
->
-> ```java
-> /* process error */
-> (int) UtilitiesParser.ERROR; 
-> ```
-
-&nbsp;
-
-> Ability to upload json also without standard methods using DTO [(see)](#data-transfer-object)
->
-> ```java       
-> /* set new graph */
-> pg.setGraph(
-> 
->   /* DTO created from json content or json file */
->   (GraphDTO) dto,
-> 
->    /* is animated grah setting */
->   (boolean) true
-> 
-> );
-> ```
-
-
-
-&nbsp;
-   
-</details>
-
-
-
-
-
-
-
-### 4.4. UI <div id="ui"/>
-
-
-> [!NOTE]
->
-> Only with `PathGraphUI` class type [(see)](#prepare)
-
-
-
-
-
-
-
-
-
-<details>
-  
-<summary>
-  <strong> Do Zoom <div id="dozoom"/> </strong>
-</summary>
-
-&nbsp;
-
-
-```java
-pg.doZoom((dooble) 2.0);
-```
-
-&nbsp;
-
-</details>
-
-
-<details>
-  
-<summary>
-  <strong> Do Drag <div id="dodrag"/> </strong>
-</summary>
-
-&nbsp;
-
-
-```java
-pg.doDrag((dooble) 20.0, (double) -10.0);
-```
-
-&nbsp;
-
-</details>
-
-<details>
-  
-<summary>
-  <strong> Set UI <div id="setui"/> </strong>
-</summary>
-
-&nbsp;
-
-
-```java
-pg.setUI(
-
-  /* is enabled top-left menu */
-  true,
-
-  /* is enabled bot-left menu */
-  true,
-
-  /* is enabled bot-mid menu */
-  true,
-
-  /* is enabled right-mid menu */
-  true,
-
-  /* is enabled top-right menu */
-  true,
-
-  /* is hide UI */
-  false
-
-);
-```
-
-&nbsp;
-
-</details>
-
-
-
-
-<details>
-  
-<summary>
-  <strong> Show UI <div id="show-ui"/> </strong>
-</summary>
-
-&nbsp;
-
-
-```java
-pg.showUI();
-```
-
-&nbsp;
-
-</details>
-
-<details>
-  
-<summary>
-  <strong> Hide UI <div id="hide-ui"/> </strong>
-</summary>
-
-&nbsp;
-
-
-```java
-pg.hideUI();
-```
-
-&nbsp;
-
-</details>
-
-
-<details>
-  
-<summary>
-  <strong> Toggle UI <div id="toggle-ui"/> </strong>
-</summary>
-
-&nbsp;
-
-
-```java
-pg.toggleUI();
-```
-
-&nbsp;
-
-</details>
-
-
-
-
-## 5. DTO · Data Transfer Objects <div id="data-transfer-object"/>
+## 7. DTO · Data Transfer Objects <div id="data-transfer-object"/>
  
 > [!NOTE]
-> Read the **Javadoc** for more technicals details: [(see)](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/spring-core)
+> Read the **Javadoc** for more details: [(see)](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/dto/package-summary.html)
 
 
+Providing to rappresent graph components in a simple and serializable structure.
 
+**Import package:**
 
-Represent the components of the graph providing a simple and serializable structure that allows for:
+```java
+import com.vittoriopiotti.pathgraph.dto.*;
+```
+
+**Usage:**
 
  * Converting graph data into JSON format
  * Reconstructing graph data from JSON
@@ -1705,277 +531,17 @@ Represent the components of the graph providing a simple and serializable struct
 
 
 
-<details>
-  
-<summary>
-  <strong>Node</strong>
-</summary>
 
-&nbsp;
 
-**Constructor**
+## 8. JSON · Data Management <div id="json-data-management"/>
 
-```java
-NodeDTO ndto = (
-  new NodeDTO(
-    /* node name */
-    (char) 'A'
-  )
-);
-```
+### Methods
 
-**Method**
+[`Get Nodes Json`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#getNodesJson()), [`Get Edges Json`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#getEdgesJson()), [`Get Connections Json`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#getConnectionsJson()), [`Get Graph Json`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#getGraphJson()), [`Upload Json`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#uploadJSON(java.io.File)), [`Download Json`](https://javadoc.io/doc/io.github.vittoriopiotti/PathGraph-JavaFX/latest/com.vittoriopiotti.pathgraph/com/vittoriopiotti/pathgraph/app/PathGraph.html#downloadJSON(java.io.File))
 
-```java
-char label = ndto.getLabel();
-```
+### Structure
 
-&nbsp;
-
-</details>
-
-
-
-<details>
-  
-<summary>
-  <strong>Edge</strong>
-</summary>
-
-&nbsp;
-
-
-
-**Constructors**
-
-
-
-```java
-EdgeDTO edto = (
-  new EdgeDTO(
-
-    /* start node */
-    (char) 'A',
-
-    /* end node */
-    (char) 'B',
-
-    /* edge cost */
-    (int) 3,
-
-    /* is arrowed edge */
-    (boolean) false
-
-  )
-);
-```
-
-
-
-
-```java
-EdgeDTO edto = (
-  new EdgeDTO(
-
-    /* start node */
-    (char) 'A',
-
-    /* end node */
-    (char) 'B',
-
-    /* edge cost */
-    (int) 3,
-
-    /* edge direction */
-    (int) SmartGraphEdgeBase.BIDIRECTIONAL
-
-  )
-);
-```
-
-
-**Methods**
-
-
-```java
-char from = edto.getFrom();
-```
-
-```java
-char to = edto.getTo();
-```
-
-```java
-int cost = edto.getCost();
-```
-
-```java
-boolean isArrowed = edto.isArrowed();
-```
-
-
-&nbsp;
-
-</details>
-
-
-
-<details>
-  
-<summary>
-  <strong>Connection</strong>
-</summary>
-
-&nbsp;
-
-**Constructor**
-
-
-```java
-ConnectionDTO ndto = (
-  new ConnectionDTO(
-
-    /* connected node */
-    (char) 'A',
-
-    /* edge cost */
-    (int) 3,
-
-  )
-);
-```
-
-
-
-**Methods**
-
-
-```java
-char label = edto.getLabel();
-```
-
-```java
-int cost = edto.getCost();
-```
-
-
-&nbsp;
-
-</details>
-
-
-
-
-
-
-
-
-<details>
-  
-<summary>
-  <strong>Graph</strong>
-</summary>
-
-&nbsp;
-
-
-**Constructors**
-
-```java
-GraphDTO gdto = (
-  new GraphDTO(
-    /* file with json */
-    (File) new File("path/to/file.json")
-  )
-);
-```
-
-
-```java
-GraphDTO gdto = (
-  new GraphDTO(
-    /* String with json content */
-    (String) jsonContent
-  )
-);
-```
-
-
-```java
-GraphDTO gdto = (
-  new GraphDTO(
-
-    /* nodes DTO */
-    List<NodeDTO> nodes, 
-
-    /* edges DTO */
-    List<EdgeDTO> edges
-
-  )
-);
-```
-
-**Methods**
-
-
-```java
-List<NodeDTO> path = (
-  gdto.findPath(
-    
-    /* start node */
-    (char) 'A',
-
-    /* end node */
-    (char) 'B',
-
-  )
-);
-```
-
-```java
-String json = gdto.getJson();
-```
-
-```java
-List<NodesDTO> lndto = (
-  gdto.getNodes())
-);
-```
-
-```java
-List<EdgeDTO> ledto = (
-  gdto.getEdges()
-);
-```
-
-
-```java
-List<ConnectionDTO> lcdto = (
-  gdto.getConnections()
-);
-```
-
-
-
-
-
-
-
-
-&nbsp;
-
-</details>
-
-
-
-
-
-
-
-
-
-## 6. JSON · Data Management <div id="json-data-management"/>
-
+**Graph**
 
 ```json
 {
@@ -1998,12 +564,113 @@ List<ConnectionDTO> lcdto = (
       "to": "C",
       "cost": 2,
       "isArrowed": false
-    },
+    }
   ]
 }
 ```
 
-## 7. Licenses <div id="licenses"/>
+<details>
+  
+<summary>
+   <strong>Nodes</strong>
+</summary>
+
+```json
+{
+  "nodes": [
+    "A",
+    "C",
+    "B"
+  ]
+}
+```
+
+</details>
+
+
+<details>
+  
+<summary>
+   <strong>Edges</strong>
+</summary>
+
+```json
+{
+  "edges": [
+    {
+      "from": "A",
+      "to": "B",
+      "cost": 1,
+      "isArrowed": true
+    },
+    {
+      "from": "C",
+      "to": "A",
+      "cost": 2,
+      "isArrowed": false
+    }
+  ]
+}
+```
+
+</details>
+
+
+<details>
+  
+<summary>
+   <strong>Connections</strong>
+</summary>
+
+```json
+{
+  "connections": [
+    {
+      "node": "B",
+      "edges": [
+      ]
+    },
+    {
+      "node": "A",
+      "edges": [
+        {
+          "to": "B",
+          "cost": 1
+        },
+        {
+          "to": "C",
+          "cost": 2
+        }
+      ]
+    },
+    {
+      "node": "C",
+      "edges": [
+        {
+          "to": "A",
+          "cost": 2
+        }
+      ]
+    }
+  ]
+}
+```
+
+</details>
+
+
+
+
+## 9. Configuration and Styling <div id="configurations-and-styling"/>
+
+
+In future versions will be optimized the management of configurations and styles similar to the original project of the fork [(see)](https://github.com/brunomnsilva/JavaFXSmartGraph#configuration-and-styling).
+
+Currently, the styles and configurations are preset and cannot be modified.
+
+
+
+## 10. Licenses <div id="licenses"/>
 
 
 > [!NOTE]
@@ -2018,6 +685,7 @@ List<ConnectionDTO> lcdto = (
 ---
 
 ### PathGraph
+
 
 **Copyright** 2024 Vittorio Piotti [(GitHub page)](https://github.com/vittorioPiotti) [(Personal page)](https://vittoriopiotti.altervista.org/) 
 
@@ -2059,9 +727,12 @@ List<ConnectionDTO> lcdto = (
 ## Fork-Based On SmartGraph <div id="fork-based-on-smartgraph"/>
 
 
-This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmart) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmart/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph to specific path graphs features in a stable user interface.
+This library is a fork based on the source code of the [SmartGraph](https://github.com/brunomnsilva/JavaFXSmartGraph) [v2.0.0](https://github.com/brunomnsilva/JavaFXSmartGraph/releases/tag/v2.0.0) library on which existing classes have been modified and new ones have been added. PathGraph is therefore the adaptation of SmartGraph to specific path graphs features in a stable user interface.
 
-[(See SmartGraph)](https://github.com/brunomnsilva/JavaFXSmartGraph)
+[_See SmartGraph_](https://github.com/brunomnsilva/JavaFXSmartGraph)
+
+
+
 
 
 
